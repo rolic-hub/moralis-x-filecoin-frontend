@@ -8,16 +8,19 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const router = useRouter();
 
+  const backHome = () => {
+    router.push("/");
+  };
   const homeclick = () => {
-    router.push("/Home")
-  }
+    router.push("/Home");
+  };
   const mainpageclick = () => {
-    router.push("/overview")
-  }
+    router.push("/overview");
+  };
 
   return (
     <div className="flex border-b-4  p-5 justify-between">
-      <div className="flex">
+      <div className="flex hover:cursor-pointer" onClick={backHome}>
         {" "}
         <div className="pl-5 pr-5">
           <Image src={vector} alt="logo" />

@@ -5,19 +5,18 @@ import Funder from "../assest/Funder.png";
 import { COnnectButton } from "./connectButton";
 import { useRouter } from "next/router";
 
-const Navbar = ({ callRouter, setCallrouter }) => {
+const Navbar = () => {
   const router = useRouter();
 
-  useEffect(() => {
-    if (callRouter) {
-      router.push("/Home");
-    } else {
-      router.push("/overview");
-    }
-  }, [callRouter]);
+  const homeclick = () => {
+    router.push("/Home")
+  }
+  const mainpageclick = () => {
+    router.push("/overview")
+  }
 
   return (
-    <div className="flex border-b-4 p-5 justify-between ">
+    <div className="flex border-b-4 border-black p-5 justify-between ">
       <div className="flex">
         {" "}
         <div className="pl-5 pr-5">
@@ -29,13 +28,13 @@ const Navbar = ({ callRouter, setCallrouter }) => {
       </div>
       <div className="flex">
         <p
-          onClick={() => setCallrouter(true)}
+          onClick={homeclick}
           className="text-2xl text-green-600 hover:underline hover:cursor-pointer font-bold mr-5 mt-3"
         >
           Home
         </p>
         <p
-          onClick={() => setCallrouter(false)}
+          onClick={mainpageclick}
           className="text-2xl text-green-600 font-bold mt-3 hover:underline hover:cursor-pointer"
         >
           Main Page

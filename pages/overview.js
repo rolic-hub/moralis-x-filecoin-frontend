@@ -1,32 +1,23 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
 import moneyBag from "../assest/moneyBag.png";
+import cryptodonate from "../assest/crytodonate.png";
+import program1 from "../assest/program1.png";
+import Layout from "../components/Layout";
 
 const Overview = () => {
-  const [callRouter, setCallrouter] = useState(false);
   return (
     <div>
-      <Navbar callRouter={callRouter} setCallrouter={setCallrouter} />
-      <div className="flex">
-        <div className="flex w-80 h-full border-r">
-          <div className="flex flex-col p-10 mt-10 ml-5 h-screen">
-            <button className="bg-green-600 hover:bg-green-800 rounded-lg p-2 mb-4 font-bold ">
-              My Profile
-            </button>
-            <button className="bg-green-600 hover:bg-green-800 rounded-lg p-2 mb-4 font-bold">
-              My Funding Projects
-            </button>
-            <button className="bg-green-600 hover:bg-green-800 rounded-lg p-2 mb-2 font-bold">
-              Funding Programs
-            </button>
-          </div>
-        </div>
-        <div className="p-10">
-          <div className="flex justify-between">
-            <p className="text-3xl font-bold text-green-600">My Profile</p>
-            <div className="flex">
-              <Image src={moneyBag} alt="moneyBag" />
+      <Layout>
+        <div className="flex">
+          <p className="text-3xl font-bold text-green-600 mt-7">My Profile</p>
+          <div className="flex ml-96">
+            <Image
+              src={moneyBag}
+              style={{ marginBottom: "40px" }}
+              alt="moneyBag"
+            />
+            <div className="mt-5 flex">
               <div className="bg-green-600 p-2 rounded-md h-fit">
                 Total funds donated
               </div>
@@ -37,7 +28,18 @@ const Overview = () => {
             </div>
           </div>
         </div>
-      </div>
+        <div>
+          <p className="mt-5 text-2xl font-bold mb-3 ml-5">NFT's Recieved</p>
+          <Image src={cryptodonate} alt="nft-holder" />
+        </div>
+        <div>
+          <p className="text-2xl font-bold mb-3 mt-7 ml-5">Programs Donated</p>
+          <div className="rounded-lg border shadow-md w-fit ">
+            <Image src={program1} alt="program-holder" />
+            <p className="text-center">Health care program</p>
+          </div>
+        </div>
+      </Layout>
     </div>
   );
 };

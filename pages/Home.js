@@ -5,10 +5,10 @@ import Navbar from "../components/Navbar";
 
 
 const HomePage = () => {
-  const [callRouter, setCallrouter] = useState(true)
+  
   return (
     <div>
-      <Navbar callRouter={callRouter} setCallrouter={setCallrouter} />
+      <Navbar/>
       <div className="flex">
         <div className="p-10 w-8/12 pt-32">
           <p className="text-3xl font-bold text-green-500 pb-10">

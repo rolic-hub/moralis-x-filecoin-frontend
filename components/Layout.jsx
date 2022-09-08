@@ -24,7 +24,7 @@ const Layout = ({ children}) => {
     <div>
       <Navbar/>
       <div className="flex">
-        <div className="flex w-80 h-full border-r-4 border-black">
+        <div className="flex w-80 h-full border-r-4">
           <div className="flex flex-col p-10 mt-10 ml-5 h-screen">
             <button
               className={notClicked}

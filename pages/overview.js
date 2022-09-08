@@ -18,11 +18,11 @@ const Overview = () => {
               alt="moneyBag"
             />
             <div className="mt-5 flex">
-              <div className="bg-green-600 p-2 rounded-md h-fit">
+              <div className="bg-green-600 p-1 rounded-md h-fit">
                 Total funds donated
               </div>
               <p className="text-3xl ml-1 mr-1">:</p>
-              <div className="bg-green-600 p-2 rounded-md h-fit w-fit">
+              <div className="bg-green-600 p-1 rounded-md h-fit w-fit">
                 $500
               </div>
             </div>

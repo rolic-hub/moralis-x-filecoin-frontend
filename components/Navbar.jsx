@@ -16,7 +16,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex border-b-4 border-black p-5 justify-between ">
+    <div className="flex border-b-4  p-5 justify-between">
       <div className="flex">
         {" "}
         <div className="pl-5 pr-5">

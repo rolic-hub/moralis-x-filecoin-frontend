@@ -1,12 +1,22 @@
 import Head from "next/head";
-import Image from "next/image"
+import Image from "next/image";
 import help2 from "../assest/help2.png";
-import logo_1 from "../assest/logo_1.png"
+import logo_1 from "../assest/logo_1.png";
 import help1 from "../assest/help1.PNG";
+import { useEffect } from "react";
 import { COnnectButton } from "../components/connectButton";
-
+import { useRouter } from "next/router";
+import { useAccount } from "wagmi";
 
 export default function Home() {
+  const { isConnecting, isConnected } = useAccount();
+  const router = useRouter();
+  useEffect(() => {
+    if (isConnecting || isConnected) {
+      router.push("/Home");
+    }
+  }, [isConnecting, isConnected]);
+
   return (
     <div className="flex w-screen">
       <Head>
@@ -15,19 +25,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-green-500 w-1/2 h-screen flex flex-col">
-     <div className="flex pt-14 pl-20 items-center "> <Image src={logo_1} alt="logo"/>
-       <p className="ml-3 mt-5 text-2xl">Project Tiltle </p></div>
-       <p className="mt-10 ml-32">Help build us a better world</p>
-      
-       <div className="mt-5 p-5 ml-5"><Image src={help2} alt="help2"/></div>
+        <div className="flex pt-14 pl-20 items-center ">
+          {" "}
+          <Image src={logo_1} alt="logo" />
+          <p className="ml-3 mt-5 text-2xl text-white">Project Tiltle </p>
+        </div>
+        <p className="mt-10 ml-32 text-white">Help build us a better world</p>
+
+        <div className="mt-5 p-5 ml-5">
+          <Image src={help2} alt="help2" />
+        </div>
       </div>
-      <div style={{marginLeft:"615px"}} className="bg-white sm:mr-36 lg:ml-10 md:ml-56 w-7/12 h-screen rounded-l-3xl absolute">
-      <div className="p-10 pl-44 flex mt-20 flex-col items-center justify-center m-10 mb-10"> <Image src={help1} alt="help1" style={{marginBottom: "20px"}}/>
-       <COnnectButton/>
-       <p className="text-black mt-10 text-center"> Connect your wallet to sign up</p>
-      </div>
-      
-      
+      <div
+        style={{ marginLeft: "615px" }}
+        className="bg-white sm:mr-36 lg:ml-10 md:ml-56 w-7/12 h-screen rounded-l-3xl absolute"
+      >
+        <div className="p-10 pl-44 flex mt-20 flex-col items-center justify-center m-10 mb-10">
+          {" "}
+          <Image src={help1} alt="help1" style={{ marginBottom: "20px" }} />
+          <COnnectButton />
+          <p className="text-black mt-10 text-center">
+            {" "}
+            Connect your wallet to sign up
+          </p>
+        </div>
       </div>
     </div>
   );

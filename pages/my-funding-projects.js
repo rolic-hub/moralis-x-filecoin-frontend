@@ -10,7 +10,7 @@ const MyfundingProjects = () => {
   return (
     <div>
       <Layout>
-        <div>
+        <div className="p-10">
           <div className="flex">
             <p className="text-3xl font-bold text-green-600">
               My Funding projects

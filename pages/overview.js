@@ -9,7 +9,7 @@ const Overview = () => {
   return (
     <div>
       <Layout>
-        <div className="flex">
+        <div className="flex p-10">
           <p className="text-3xl font-bold text-green-600 mt-7">My Profile</p>
           <div className="flex ml-96">
             <Image
@@ -28,11 +28,11 @@ const Overview = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="pl-10">
           <p className="mt-5 text-2xl font-bold mb-3 ml-5">NFT's Recieved</p>
           <Image src={cryptodonate} alt="nft-holder" />
         </div>
-        <div>
+        <div className="pl-10">
           <p className="text-2xl font-bold mb-3 mt-7 ml-5">Programs Donated</p>
           <div className="rounded-lg border shadow-md w-fit ">
             <Image src={program1} alt="program-holder" />

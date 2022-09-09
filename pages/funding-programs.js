@@ -5,7 +5,6 @@ import Image from "next/image";
 import CauseBox from "../components/causeBox";
 import { useRouter } from "next/router";
 
-
 const FundingProgram = () => {
   const [currentPage, setcurrentPage] = useState(2);
   const [verify, setVerify] = useState(true);
@@ -29,8 +28,14 @@ const FundingProgram = () => {
     setCompleted(true);
   };
   const verifyButton = () => {
-    router.push('/funding-programs/verify/')
-  }
+    router.push(`/verifying/8`);
+  };
+  const progressButton = () => {
+    router.push(`/progress/8`);
+  };
+  const completedButton = () => {
+    router.push(`/completed/8`);
+  };
   return (
     <div>
       <Layout>
@@ -77,7 +82,10 @@ const FundingProgram = () => {
                   Help us fight feed thousands of people in poverty, homeless
                   people and provide medical care for the poor
                 </p>
-                <button className="mt-5 bg-orange-600 p-1 ml-24 text-sm font-semibold text-white rounded-md mb-3 ">
+                <button
+                  onClick={verifyButton}
+                  className="mt-5 bg-orange-600 p-1 ml-24 text-sm font-semibold text-white rounded-md mb-3 "
+                >
                   verify
                 </button>
               </div>
@@ -97,12 +105,13 @@ const FundingProgram = () => {
                 title="Health care program"
                 buttonDesign={`mt-5 bg-green-600 p-1 ml-1 font-semibold text-white text-xs rounded-md mb-3`}
                 progressDesign={`ml-10 h-3 rounded-lg bg-transparent mb-3 w-28`}
+                onClicked={progressButton}
               />
             </div>
           )}
           {completed && (
             <div>
-                <CauseBox
+              <CauseBox
                 addbutton={true}
                 addProgress={true}
                 buttonText="completed"
@@ -114,11 +123,10 @@ const FundingProgram = () => {
                 title="Health care program"
                 buttonDesign={`mt-5 bg-blue-600 font-semibold p-1 ml-1 text-white text-xs rounded-md mb-3`}
                 progressDesign={`ml-10 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
+                onClicked={completedButton}
               />
             </div>
-          )
-
-          }
+          )}
         </div>
       </Layout>
     </div>

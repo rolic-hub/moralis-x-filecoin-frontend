@@ -14,10 +14,12 @@ const Overview = () => {
           <div className="flex ml-96">
             <Image
               src={moneyBag}
-              style={{ marginBottom: "40px" }}
+              height="30px"
+              width="30px"
+            //   style={{ marginBottom: "40px" }}
               alt="moneyBag"
             />
-            <div className="mt-5 flex">
+            <div className="mt-4 flex">
               <div className="bg-green-600 p-1 rounded-md h-fit font-semibold">
                 Total funds donated
               </div>

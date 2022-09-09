@@ -34,12 +34,12 @@ export default function Modal({ showModal, setShowModal }) {
                     </div>
                   </div>
                   <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    className="p-1 ml-auto bg-transparent border-0 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                    <p className="text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
                       X
-                    </span>
+                    </p>
                   </button>
                 </div>
                 <p className="text-2xl pl-5 mt-5 ml-48 font-semibold text-black">

@@ -130,7 +130,7 @@ const ProgressPage = () => {
             <BsFillPersonFill size={25} className="mr-4" />
             <p className="text-md font-semibold">
               Address of Organizer:{" "}
-              <a href={`https://mumbai.polygonscan.com/`} target="_blank">
+              <a href={`https://mumbai.polygonscan.com/`} target="_blank" rel="noopener noreferrer">
                 0xb64x6z6z6
               </a>
             </p>

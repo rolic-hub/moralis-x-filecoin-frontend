@@ -31,7 +31,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="pl-10">
-          <p className="mt-5 text-2xl font-bold mb-3 ml-5">NFT's Recieved</p>
+          <p className="mt-5 text-2xl font-bold mb-3 ml-5">NFT&apos;s Recieved</p>
           <Image src={cryptodonate} alt="nft-holder" />
         </div>
         <div className="pl-10">

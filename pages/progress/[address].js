@@ -93,15 +93,15 @@ const ProgressPage = () => {
           </div>
         </div>
       </div>
-      <div className="mr-24 mt-24">
+      <div className="mr-20 mt-24">
         <div>
           <Image src={program1} height="250px" width="400px" alt="program-1" />
         </div>
         <button className="mt-5 bg-green-600 text-xl font-bold p-1 rounded-md pl-5 pr-5 ml-32">
           Donate
         </button>
-        <button className="mt-5 bg-green-600 text-xl font-bold p-1 rounded-md pl-5 pr-5 ml-32">
-          Mint nft
+        <button className="mt-5 bg-green-600 text-xl font-bold p-1 rounded-md pl-5 pr-5 ml-24">
+          Mint goodwill nft
         </button>
         <div className="mt-10 ml-5">
           <p className="flex text-md font-semibold">
@@ -154,7 +154,6 @@ const ProgressPage = () => {
               <p className="text-md font-semibold">www.Other.com</p>
             </div>
           </div>
-
           <div className="flex mt-2">
             <BsFillChatDotsFill size={25} className="mr-2" />
             <p className="text-md font-semibold">Chat with the organizer</p>

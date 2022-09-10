@@ -7,6 +7,7 @@ import CauseBox from "../../components/causeBox";
 import program1 from "../../assest/program1.png";
 import moneyBag from "../../assest/moneyBag.png";
 import { useRouter } from "next/router";
+import { IoReturnUpForwardOutline } from "react-icons/io5";
 
 const CompletedPage = () => {
   const router = useRouter();
@@ -36,8 +37,22 @@ const CompletedPage = () => {
               Warning:<span></span>{" "}
             </p>
           </div>
-          <div className=" mt-10 ml-10">
-            <p className="text-2xl font-semibold">Discussions</p>
+          <div>
+            <p className="ml-10 text-xl font-bold mt-8 mb-2">Discussions</p>
+            <div className="flex-1 border mt-2 ml-10 w-4/5">
+              <div className="ml-10 mt-5">
+                <div className="flex">
+                  <IoReturnUpForwardOutline className="ml-5" size={30} />
+                  <p className="text-semibold text-xs text-gray-400 mt-1">
+                    {" "}
+                    0xea12....
+                  </p>
+                </div>
+                <div className="border w-fit rounded-lg pl-2 pr-2 mb-2">
+                  join us on the 27th of the month to vist a charity home
+                </div>
+              </div>
+            </div>
           </div>
           <div className="mt-32 ml-10 text-2xl font-semibold">
             <p>Users who donated </p>

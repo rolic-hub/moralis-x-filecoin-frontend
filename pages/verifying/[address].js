@@ -3,9 +3,9 @@ import Image from "next/image";
 import vector from "../../assest/Vector.png";
 import Funder from "../../assest/Funder.png";
 import program1 from "../../assest/program1.png";
-import moneybag from "../../assest/moneyBag.png";
 import video from "../../assest/video.png";
 import { BiNotepad } from "react-icons/bi";
+
 import {
   AiFillCheckCircle,
   AiOutlineTwitter,
@@ -17,7 +17,7 @@ import {
   BsFillChatDotsFill,
   BsFacebook,
 } from "react-icons/bs";
-import { GiOnTarget } from "react-icons/gi";
+import { GiOnTarget, GiPositionMarker } from "react-icons/gi";
 import { CgWebsite } from "react-icons/cg";
 
 const Verifypage = () => {
@@ -66,8 +66,41 @@ const Verifypage = () => {
                 poeple and provide medical care for the poor
               </p>
             </div>
-            <p>More information</p>
-            
+            <p className="ml-10 text-xl font-semibold mt-5 mb-3">
+              More information
+            </p>
+            <div className="ml-10">
+              <div className="flex">
+                <BsFillPersonFill size={25} className="mr-4" />
+                <p className="text-md font-semibold">
+                  Address of Organizer: <a href={`https://mumbai.polygonscan.com/`} target="_blank">0xb64x6z6z6</a>
+                </p>
+              </div>
+              <div className="flex mt-2">
+                <GiOnTarget size={25} className="mr-4" />
+                <p className="text-md font-semibold">
+                  Target: <span className="text-green-600 ml-1"> $1000</span>
+                </p>
+              </div>
+              <div className="flex mt-2">
+                <AiOutlineTwitter size={25} className="mr-4" />
+                <div className="border w-fit rounded pl-1 pr-1 shadow-md">
+                  <p className="text-md font-semibold">www.twitter.com</p>
+                </div>
+              </div>
+              <div className="flex mt-2">
+                <BsFacebook size={25} className="mr-4" />
+                <div className="border w-fit rounded pl-1 pr-1 shadow-md">
+                  <p className="text-md font-semibold">www.facebook.com</p>
+                </div>
+              </div>
+              <div className="flex mt-2">
+                <CgWebsite size={25} className="mr-4" />
+                <div className="border w-fit rounded pl-1 pr-1 shadow-md">
+                  <p className="text-md font-semibold">www.Other.com</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -79,7 +112,11 @@ const Verifypage = () => {
           vote
         </button>
         <div className="mt-10 ml-20">
-          <div className="flex">
+          <p className="flex text-md font-semibold">
+            <GiPositionMarker size={25} className="mr-2" />
+            Status: <span className="ml-2 text-orange-500">Verifying</span>
+          </p>
+          <div className="flex mt-2">
             <BiNotepad size={25} className=" mr-2" />
             <p className="text-md font-semibold">Total votes needed : 100</p>
           </div>
@@ -94,6 +131,13 @@ const Verifypage = () => {
           <div className="flex mt-2">
             <IoTimeSharp size={25} className="mr-2" />
             <p className="text-md font-semibold">Time remaining: 2 Days</p>
+          </div>
+          <div className="flex mt-2">
+            <BsFillChatDotsFill size={25} className="mr-2" />
+            <p className="text-md font-semibold">Chat with the organizer</p>
+            <button className="bg-blue-600 p-1 rounded-md font-bold mb-24 ml-2">
+              Chat
+            </button>
           </div>
         </div>
       </div>

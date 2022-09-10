@@ -12,10 +12,11 @@ const CauseBox = ({
   title,
   progressDesign,
   buttonText,
-  onClicked
+  onClicked,
+  boxDesign
 }) => {
   return (
-    <div className="mt-10 ml-20 border rounded-lg shadow-md w-60">
+    <div className={`mt-10 ml-20 border rounded-lg shadow-md ${boxDesign} `}>
       <Image src={image} width="300px" height="150px" alt="program-1" />
       <p className="font-bold ml-2">{title}</p>
       <p className="text-xs mt-2 leading-normal text-left ml-2 font-bold text-gray-500">

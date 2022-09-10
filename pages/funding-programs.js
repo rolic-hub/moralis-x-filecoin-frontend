@@ -106,6 +106,7 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-green-600 p-1 ml-1 font-semibold text-white text-xs rounded-md mb-3`}
                 progressDesign={`ml-10 h-3 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={progressButton}
+                boxDesign="w-60"
               />
             </div>
           )}
@@ -124,6 +125,7 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-blue-600 font-semibold p-1 ml-1 text-white text-xs rounded-md mb-3`}
                 progressDesign={`ml-10 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={completedButton}
+                boxDesign="w-60"
               />
             </div>
           )}

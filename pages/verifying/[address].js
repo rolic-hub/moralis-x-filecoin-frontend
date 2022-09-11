@@ -113,7 +113,7 @@ const Verifypage = () => {
         </button>
         <div className="mt-10 ml-20">
           <p className="flex text-md font-semibold">
-            <GiPositionMarker size={25} className="mr-2" />
+            <GiPositionMarker size={25} className="mr-2"/>
             Status: <span className="ml-2 text-orange-500">Verifying</span>
           </p>
           <div className="flex mt-2">

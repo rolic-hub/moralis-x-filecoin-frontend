@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import vector from "../../assest/Vector.png";
 import Funder from "../../assest/Funder.png";
 import program1 from "../../assest/program1.png";
 import video from "../../assest/video.png";
 import moneyBag from "../../assest/moneyBag.png";
-
+import DonateModal from "../../components/donateModal";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { IoTimeSharp, IoReturnUpForwardOutline } from "react-icons/io5";
 import {
@@ -17,6 +17,7 @@ import { GiOnTarget, GiPositionMarker } from "react-icons/gi";
 import { CgWebsite } from "react-icons/cg";
 
 const ProgressPage = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="p-5 flex justify-between">
       <div>
@@ -93,11 +94,14 @@ const ProgressPage = () => {
           </div>
         </div>
       </div>
-      <div className="mr-20 mt-24">
+      <div className="mr-2 mt-24">
         <div>
           <Image src={program1} height="250px" width="400px" alt="program-1" />
         </div>
-        <button className="mt-5 bg-green-600 text-xl font-bold p-1 rounded-md pl-5 pr-5 ml-32">
+        <button
+          onClick={() => setShowModal(true)}
+          className="mt-5 bg-green-600 text-xl font-bold p-1 rounded-md pl-5 pr-5 ml-32"
+        >
           Donate
         </button>
         <button className="mt-5 bg-green-600 text-xl font-bold p-1 rounded-md pl-5 pr-5 ml-24">
@@ -125,7 +129,6 @@ const ProgressPage = () => {
             <IoTimeSharp size={25} className="mr-4" />
             <p className="text-md font-semibold">Time remaining: 2 Days</p>
           </div>
-
           <div className="flex">
             <BsFillPersonFill size={25} className="mr-4" />
             <p className="text-md font-semibold">
@@ -135,7 +138,6 @@ const ProgressPage = () => {
               </a>
             </p>
           </div>
-
           <div className="flex mt-2">
             <AiOutlineTwitter size={25} className="mr-4" />
             <div className="border w-fit rounded pl-1 pr-1 shadow-md">
@@ -161,6 +163,8 @@ const ProgressPage = () => {
               Chat
             </button>
           </div>
+          <button className="mt-24 ml-24 rounded-lg p-1 bg-black">Back</button>
+          <DonateModal showModal={showModal} setShowModal={setShowModal} />
         </div>
       </div>
     </div>

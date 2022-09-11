@@ -15,6 +15,7 @@ export default function Home() {
     if (isConnecting || isConnected) {
       router.push("/Home");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isConnecting, isConnected]);
 
   return (

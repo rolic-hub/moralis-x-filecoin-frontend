@@ -3,7 +3,6 @@ import Image from 'next/image';
 import vector from '../../assest/Vector.png';
 import Funder from '../../assest/Funder.png';
 import program1 from '../../assest/program1.png';
-import video from '../../assest/video.png';
 import { BiNotepad } from 'react-icons/bi';
 import VoteModal from '../../components/voteModal';
 import ReactPlayer from 'react-player';

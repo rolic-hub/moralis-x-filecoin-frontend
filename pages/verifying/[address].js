@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 import vector from "../../assest/Vector.png";
 import Funder from "../../assest/Funder.png";
 import program1 from "../../assest/program1.png";
 import video from "../../assest/video.png";
 import { BiNotepad } from "react-icons/bi";
+import VoteModal from "../../components/voteModal";
 
 import {
   AiFillCheckCircle,
@@ -21,6 +22,7 @@ import { GiOnTarget, GiPositionMarker } from "react-icons/gi";
 import { CgWebsite } from "react-icons/cg";
 
 const Verifypage = () => {
+  const [showModal, setShowModal] = useState(false)
   return (
     <div className="p-5 flex justify-between">
       <div>
@@ -108,9 +110,10 @@ const Verifypage = () => {
         <div>
           <Image src={program1} height="250px" width="400px" alt="program-1" />
         </div>
-        <button className="mt-5 bg-orange-500 text-xl font-bold p-1 rounded-md pl-10 pr-10 ml-32">
+        <button onClick={() => setShowModal(true)} className="mt-5 bg-orange-500 text-xl font-bold p-1 rounded-md pl-10 pr-10 ml-32">
           vote
         </button>
+        <VoteModal setShowModal={setShowModal} showModal={showModal}/>
         <div className="mt-10 ml-20">
           <p className="flex text-md font-semibold">
             <GiPositionMarker size={25} className="mr-2"/>

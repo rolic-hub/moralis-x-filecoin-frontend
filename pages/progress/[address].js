@@ -7,6 +7,7 @@ import video from '../../assest/video.png'
 import moneyBag from '../../assest/moneyBag.png'
 import DonateModal from '../../components/donateModal'
 import { AiOutlineTwitter } from 'react-icons/ai'
+import ReactPlayer from 'react-player'
 import { IoTimeSharp, IoReturnUpForwardOutline } from 'react-icons/io5'
 import {
   BsFillPersonFill,
@@ -57,7 +58,7 @@ const ProgressPage = () => {
               Introductory video
             </p>
             <div className='ml-10'>
-              <Image src={video} width='500' height='300px' alt='video-png' />
+              <ReactPlayer url="https://youtu.be/aKYPpT4ZPeA?list=RDaKYPpT4ZPeA"/>
             </div>
             <p className='ml-10 text-xl font-bold mt-5 mb-2'>Details</p>
             <div className='w-8/12 border ml-10 rounded-lg p-2 shadow-md '>

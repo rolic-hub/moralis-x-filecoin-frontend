@@ -6,7 +6,6 @@ import CauseBox from "../components/causeBox";
 import { useRouter } from "next/router";
 
 const FundingProgram = () => {
-  const [currentPage, setcurrentPage] = useState(2);
   const [verify, setVerify] = useState(true);
   const [progress, setProgress] = useState(false);
   const [completed, setCompleted] = useState(false);
@@ -46,24 +45,43 @@ const FundingProgram = () => {
             </p>
           </div>
           <div className="flex mt-14 ml-44 justify-between mr-80">
-            <p
+           <div>
+           <p
               onClick={verifyClick}
               className="text-xl font-bold hover:cursor-pointer"
             >
               Verifying
             </p>
-            <p
+            {verify && (
+                <hr className="w-full h-1  bg-green-600 rounded-lg "/>
+            )}
+            
+           </div>
+            
+           <div>
+           <p
               onClick={progressClick}
               className="text-xl font-bold  hover:cursor-pointer ml-40"
             >
               In progress
             </p>
+            { progress && (
+                <hr className="w-24 h-1 ml-40 bg-green-600 rounded-lg "/>
+            )}
+            
+           </div>
+            <div>
             <p
               onClick={completedClick}
               className="text-xl font-bold  hover:cursor-pointer ml-48"
             >
               Completed
             </p>
+            { completed && (
+                <hr className="w-24 h-1 ml-48 bg-green-600 rounded-lg "/>
+            )}
+            
+            </div>
           </div>
         </div>
         <hr className="w-full mt-5 bg-black h-0.5" />

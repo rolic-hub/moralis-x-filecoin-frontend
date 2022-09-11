@@ -106,7 +106,7 @@ const ProgressPage = () => {
         >
           Donate
         </button>
-        <button className='mt-5 bg-green-600 text-xl font-serif font-bold p-1 rounded-md pl-5 pr-5 ml-24'>
+        <button onClick={() => setNftModal(true)} className='mt-5 bg-green-600 text-xl font-serif font-bold p-1 rounded-md pl-5 pr-5 ml-24'>
           Mint goodwill nft
         </button>
         <div className='mt-10 ml-5'>

@@ -25,6 +25,7 @@ const HomePage = () => {
           <Image src={donate} alt="donate-funds" />
         </div>
       </div>
+      <p className="text-center text-3xl text-green-500 font-bold">What we are all about</p>
     </div>
   );
 };

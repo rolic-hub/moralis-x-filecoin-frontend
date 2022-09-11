@@ -54,10 +54,10 @@ const CompletedPage = () => {
               </div>
             </div>
           </div>
-          <div className="mt-32 ml-10 text-2xl font-semibold">
+          <div className="mt-32 ml-16 text-2xl font-semibold">
             <p>Users who donated </p>
           </div>
-          <div className="flex mt-5">
+          <div className="flex ml-5 mt-5">
             <div className="ml-5 ">
               <Image src={Person} height="40px" width="40px" alt="person" />
             </div>
@@ -70,7 +70,7 @@ const CompletedPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex mt-5">
+          <div className="flex ml-5 mt-5">
             <div className="ml-5 ">
               <Image src={Person} height="40px" width="40px" alt="person" />
             </div>
@@ -83,7 +83,7 @@ const CompletedPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex mt-5">
+          <div className="flex ml-5 mt-5">
             <div className="ml-5 ">
               <Image src={Person} height="40px" width="40px" alt="person" />
             </div>

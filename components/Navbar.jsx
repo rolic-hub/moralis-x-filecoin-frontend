@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 
 const Navbar = () => {
   const router = useRouter();
+  const [] = useState();
 
   const backHome = () => {
     router.push("/");
@@ -30,18 +31,31 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex">
-        <p
+        <div>
+             <p
           onClick={homeclick}
-          className="text-2xl text-green-600 hover:underline hover:cursor-pointer font-bold mr-5 mt-3"
+          className="text-2xl text-green-600  hover:cursor-pointer font-bold mr-5 mt-3"
         >
           Home
         </p>
-        <p
+        {router.pathname === "/Home" && (
+             <hr className="h-1 rounded-lg w-16 bg-green-500 mr-5"/>
+        )}
+       
+        </div>
+       <div>
+         <p
           onClick={mainpageclick}
-          className="text-2xl text-green-600 font-bold mt-3 hover:underline hover:cursor-pointer"
+          className="text-2xl text-green-600 font-bold mt-3  hover:cursor-pointer"
         >
           Main Page
         </p>
+        {(router.pathname === "/overview" || router.pathname === "/my-funding-projects" || router.pathname === "/funding-programs") && (
+            <hr className="h-1 rounded-lg w-28 bg-green-500 mr-5"/>
+        )}
+        
+       </div>
+       
       </div>
       <COnnectButton />
     </div>

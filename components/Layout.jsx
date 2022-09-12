@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     <div>
       <Navbar />
       <div className="flex">
-        <div className="flex w-80 h-full border-r-4">
+        <div className="flex w-80 h-full border-r-4 dark:border-green-600">
           <div className="flex flex-col p-10 mt-10 ml-5 h-screen">
             <button className={router.pathname === "/overview" ? onClickedOn : notClicked} onClick={_profilepage}>
               My Profile

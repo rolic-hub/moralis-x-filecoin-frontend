@@ -10,11 +10,11 @@ const HomePage = () => {
     <div>
       <Navbar/>
       <div className="flex">
-        <div className="p-10 w-8/12 pt-32">
+        <div className="p-10 w-7/12 pt-32">
           <p className="text-3xl font-bold text-green-500 pb-10">
             A place where you can gather funding for your projects
           </p>
-          <p className="text-2xl ">
+          <p className="text-2xl dark:text-green-600 leading-relaxed">
             Funder is a web3 charity funding platform. Where organizers could
             post projects and gather funding for your project in a decentralized
             and transparent manner. Users can donate with crypto currency and help

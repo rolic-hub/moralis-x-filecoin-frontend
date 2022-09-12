@@ -59,7 +59,7 @@ const FundingProgram = () => {
               Funding programs
             </p>
           </div>
-          <div className="flex mt-14 ml-44 mr-80">
+          <div className="flex mt-14 ml-40 mr-80">
             <div>
               <p
                 onClick={verifyClick}
@@ -90,20 +90,20 @@ const FundingProgram = () => {
             <div>
               <p
                 onClick={rejectedClicked}
-                className={`text-xl font-bold hover:cursor-pointer ml-12 flex ${
+                className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
                   reject ? 'text-red-600' : ''
                 }`}
               >
                 Rejected <AiOutlineCloseCircle className="mt-1 ml-1" />
               </p>
               {reject && (
-                <hr className="w-28 h-1 ml-12 bg-green-600 rounded-lg " />
+                <hr className="w-24 h-1 ml-16 bg-green-600 rounded-lg " />
               )}
             </div>
             <div>
               <p
                 onClick={completedClick}
-                className={`text-xl font-bold  hover:cursor-pointer ml-16 flex ${
+                className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
                   completed ? 'text-blue-600' : ''
                 }`}
               >

@@ -1,30 +1,45 @@
-import React, { useState } from "react";
-import Layout from "../components/Layout";
-import program1 from "../assest/program1.png";
-import Image from "next/image";
-import CauseBox from "../components/causeBox";
-import { useRouter } from "next/router";
+import React, { useState } from 'react';
+import Layout from '../components/Layout';
+import program1 from '../assest/program1.png';
+import Image from 'next/image';
+import CauseBox from '../components/causeBox';
+import { useRouter } from 'next/router';
+import { GiSandsOfTime } from 'react-icons/gi';
+import { BiDollarCircle } from 'react-icons/bi';
+import { BsCheckCircle } from 'react-icons/bs';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 const FundingProgram = () => {
   const [verify, setVerify] = useState(true);
   const [progress, setProgress] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [reject, setReject] = useState(false);
   const router = useRouter();
+  const clicked = 'text-orange-600';
 
   const verifyClick = () => {
     setProgress(false);
     setCompleted(false);
+    setReject(false);
     setVerify(true);
   };
   const progressClick = () => {
     setVerify(false);
     setCompleted(false);
+    setReject(false);
     setProgress(true);
   };
   const completedClick = () => {
     setVerify(false);
     setProgress(false);
+    setReject(false);
     setCompleted(true);
+  };
+  const rejectedClicked = () => {
+    setVerify(false);
+    setProgress(false);
+    setCompleted(false);
+    setReject(true);
   };
   const verifyButton = () => {
     router.push(`/verifying/8`);
@@ -44,43 +59,59 @@ const FundingProgram = () => {
               Funding programs
             </p>
           </div>
-          <div className="flex mt-14 ml-44 justify-between mr-80">
-           <div>
-           <p
-              onClick={verifyClick}
-              className="text-xl font-bold hover:cursor-pointer"
-            >
-              Verifying
-            </p>
-            {verify && (
-                <hr className="w-full h-1  bg-green-600 rounded-lg "/>
-            )}
-            
-           </div>
-            
-           <div>
-           <p
-              onClick={progressClick}
-              className="text-xl font-bold  hover:cursor-pointer ml-40"
-            >
-              In progress
-            </p>
-            { progress && (
-                <hr className="w-24 h-1 ml-40 bg-green-600 rounded-lg "/>
-            )}
-            
-           </div>
+          <div className="flex mt-14 ml-44 mr-80">
             <div>
-            <p
-              onClick={completedClick}
-              className="text-xl font-bold  hover:cursor-pointer ml-48"
-            >
-              Completed
-            </p>
-            { completed && (
-                <hr className="w-24 h-1 ml-48 bg-green-600 rounded-lg "/>
-            )}
-            
+              <p
+                onClick={verifyClick}
+                className={`text-xl font-bold hover:cursor-pointer flex ${
+                  verify ? 'text-orange-500' : ''
+                }`}
+              >
+                Verifying <GiSandsOfTime className="mt-1" />
+              </p>
+              {verify && (
+                <hr className="w-full h-1  bg-green-600 rounded-lg " />
+              )}
+            </div>
+
+            <div>
+              <p
+                onClick={progressClick}
+                className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
+                  progress ? 'text-green-600' : ''
+                }`}
+              >
+                In progress <BiDollarCircle className="mt-1 ml-1" />
+              </p>
+              {progress && (
+                <hr className="w-28 h-1 ml-16 bg-green-600 rounded-lg " />
+              )}
+            </div>
+            <div>
+              <p
+                onClick={rejectedClicked}
+                className={`text-xl font-bold hover:cursor-pointer ml-12 flex ${
+                  reject ? 'text-red-600' : ''
+                }`}
+              >
+                Rejected <AiOutlineCloseCircle className="mt-1 ml-1" />
+              </p>
+              {reject && (
+                <hr className="w-28 h-1 ml-12 bg-green-600 rounded-lg " />
+              )}
+            </div>
+            <div>
+              <p
+                onClick={completedClick}
+                className={`text-xl font-bold  hover:cursor-pointer ml-16 flex ${
+                  completed ? 'text-blue-600' : ''
+                }`}
+              >
+                Completed <BsCheckCircle className="mt-1 ml-1" />
+              </p>
+              {completed && (
+                <hr className="w-28 h-1 ml-16 bg-green-600 rounded-lg " />
+              )}
             </div>
           </div>
         </div>

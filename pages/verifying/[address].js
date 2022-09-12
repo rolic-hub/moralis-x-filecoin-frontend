@@ -6,7 +6,6 @@ import program1 from '../../assest/program1.png';
 import { BiNotepad } from 'react-icons/bi';
 import VoteModal from '../../components/voteModal';
 import ReactPlayer from 'react-player';
-
 import {
   AiFillCheckCircle,
   AiOutlineTwitter,

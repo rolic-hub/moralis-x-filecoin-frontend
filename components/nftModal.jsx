@@ -1,21 +1,15 @@
-import Image from "next/image";
-import React, {useState} from "react";
-import program1 from "../assest/program1.png"
+import Image from 'next/image';
+import React, { useState } from 'react';
+import program1 from '../assest/program1.png';
 
-
-export default function NftModal({showModal, setShowModal}) {
- 
+export default function NftModal({ showModal, setShowModal }) {
   return (
     <>
       {showModal ? (
         <>
-          <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto mx-auto max-w-sm">
-             
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-fit bg-white outline-none focus:outline-none">
-           
                 <div className="flex items-start justify-between ml-20 mt-2 rounded-t">
                   <h3 className="text-2xl text-green-500 font-semibold">
                     Mint goodwill nft
@@ -32,38 +26,56 @@ export default function NftModal({showModal, setShowModal}) {
                 {/*body*/}
                 <div className="flex-auto pl-2 pr-2">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                   <div>
-                    <p className="ml-2">Mint a goodwill nft to the creator of this Cause</p>
-                    <div className="flex">
-                         <div className="mt-2">
-                        <p className="text-sm font-semibold mb-1 ml-5">Mint default Nft:</p>
-                        <div className="flex">
-                            <p className="flex text-sm ml-2 mr-2">Image</p>
+                    <div>
+                      <p className="ml-2">
+                        Mint a goodwill nft to the creator of this Cause
+                      </p>
+                      <div className="flex">
+                        <div className="mt-2">
+                          <p className="text-sm font-semibold mb-1 ml-5">
+                            Mint default Nft:
+                          </p>
+                          <div className="flex">
+                            <p className="flex text-sm ml-2 mr-2">Image - </p>
                             <div>
-                                <Image height="100px" width="200px" src={program1} alt="program-1"/>
+                              <Image
+                                height="100px"
+                                width="200px"
+                                src={program1}
+                                alt="program-1"
+                              />
                             </div>
+                          </div>
+                          <div className="flex">
+                            <p className="text-sm ml-2 mr-2 mt-2">Title - </p>
+                            <p className="text-sm border-2 p-1 rounded-lg ml-2 ">
+                              A Goodwill nft
+                            </p>
+                          </div>
                         </div>
-                        <div className="flex">
-                            <p className="text-sm ml-2 mr-2 mt-2">Title</p>
-                            <p className="text-sm border-2 p-1 rounded-lg ml-2 ">A Goodwill nft</p>
-                        </div>
-                    </div>
-                    <div className="mt-2 ml-5">
-                        <p className="text-sm font-semibold mb-1 ml-5">Mint custom Nft:</p>
-                        <div className="flex">
-                            <p className="flex text-sm ml-2 mr-2">Image</p>
+                        <div className="mt-2 ml-5">
+                          <p className="text-sm font-semibold mb-1 ml-5">
+                            Mint custom Nft:
+                          </p>
+                          <div className="flex">
+                            <p className="flex text-sm ml-2 mr-2">Image - </p>
                             <div>
-                               <input type="file" className="w-36 rounded-lg border " />
+                              <input
+                                type="file"
+                                className="w-36 rounded-lg border "
+                              />
                             </div>
+                          </div>
+                          <div className="flex mt-5">
+                            <p className="text-sm ml-2 mr-2 mt-2">Title - </p>
+                            <input
+                              type="text"
+                              className="w-36 rounded-lg border "
+                            />
+                          </div>
                         </div>
-                        <div className="flex mt-5">
-                            <p className="text-sm ml-2 mr-2 mt-2">Title</p>
-                            <input type="text" className="w-36 rounded-lg border "/>
-                        </div>
+                      </div>
                     </div>
-                    </div>
-                   
-                   </div>
                   </p>
                 </div>
                 {/*footer*/}

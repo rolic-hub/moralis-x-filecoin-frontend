@@ -63,7 +63,7 @@ const ProgressPage = () => {
             <div className='w-8/12 border ml-10 rounded-lg p-2 shadow-md '>
               <p>
                 Help us fight feed thousands of people in poverty, homeless
-                people and provide medical care for the poor
+                people and provide medical care for the poor 
               </p>
             </div>
             <div>
@@ -73,7 +73,7 @@ const ProgressPage = () => {
                 others to know, organise IRL events etc....
               </p>
               <div className='mt-3 ml-16'>
-                <input className='rounded-lg border-2 w-72' type='text' />
+                <input className='rounded-lg text-center border-2 w-72' type='text' />
                 <button className='ml-3 bg-purple-500 w-fit p-1 text-white rounded-lg'>
                   send
                 </button>
@@ -82,7 +82,7 @@ const ProgressPage = () => {
                 <div className='ml-10 mt-5'>
                   <div className='flex'>
                     <IoReturnUpForwardOutline className='ml-5' size={30} />
-                    <p className='text-semibold text-xs text-gray-400 mt-1'>
+                    <p className=' hover:cursor-pointer text-semibold text-xs text-gray-400 mt-1'>
                       {' '}
                       0xea12....
                     </p>

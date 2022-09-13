@@ -119,7 +119,7 @@ const FundingProgram = () => {
         <div>
           {verify && (
             <div>
-              <div className="mt-10 ml-20 border rounded-lg shadow-md w-60">
+              <div className="mt-10 ml-20 border rounded-lg shadow-md dark:shadow-orange-600 w-60">
                 <Image
                   src={program1}
                   width="300px"
@@ -155,7 +155,7 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-green-600 p-1 ml-1 font-semibold text-white text-xs rounded-md mb-3`}
                 progressDesign={`ml-10 h-3 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={progressButton}
-                boxDesign="w-60"
+                boxDesign="w-60 dark:shadow-green-600"
               />
             </div>
           )}
@@ -174,7 +174,7 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-blue-600 font-semibold p-1 ml-1 text-white text-xs rounded-md mb-3`}
                 progressDesign={`ml-10 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={completedButton}
-                boxDesign="w-60"
+                boxDesign="w-60 dark:shadow-blue-600"
               />
             </div>
           )}

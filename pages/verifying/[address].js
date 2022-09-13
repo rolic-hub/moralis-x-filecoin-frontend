@@ -58,7 +58,7 @@ const Verifypage = () => {
               Introductory video
             </p>
             <div className="ml-10">
-              <ReactPlayer url="https://youtu.be/aKYPpT4ZPeA?list=RDaKYPpT4ZPeA" />
+              <ReactPlayer url="https://youtu.be/aKYPpT4ZPeA?list=RDaKYPpT4ZPeA" controls={true} />
             </div>
             <p className="ml-10 text-xl font-bold mt-5 mb-2">Details</p>
             <div className="w-3/6 border ml-10 rounded-lg p-2 shadow-md ">

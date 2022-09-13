@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar addDesign="dark:border-green-600" />
       <div className="flex">
         <div className="flex w-80 h-full border-r-4 border-black dark:border-green-600">
           <div className="flex flex-col p-10 mt-10 ml-5 h-screen">

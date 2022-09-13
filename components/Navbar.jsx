@@ -5,7 +5,7 @@ import Funder from "../assest/Funder.png";
 import { COnnectButton } from "./connectButton";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = ({addDesign}) => {
   const router = useRouter();
   const [] = useState();
 
@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex border-b-4 border-black dark:border-green-600 p-5 justify-between">
+    <div className={`flex border-b-4 border-black p-5 justify-between ${addDesign}`}>
       <div className="flex hover:cursor-pointer" onClick={backHome}>
         {" "}
         <div className="pl-5 pr-5">

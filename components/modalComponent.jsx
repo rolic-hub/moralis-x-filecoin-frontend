@@ -8,7 +8,7 @@ export default function Modal({ showModal, setShowModal }) {
     <>
       {showModal ? (
         <>
-          <div className="justify-center items-center pt-48 flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className="justify-center items-center pt-64 flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -42,7 +42,7 @@ export default function Modal({ showModal, setShowModal }) {
                     </p>
                   </button>
                 </div>
-                <p className="text-2xl pl-5 mt-5 ml-48 font-semibold text-black">
+                <p className="text-2xl pl-5 mt-5 ml-48 font-semibold underline text-black">
                   Create new cause
                 </p>
                 {/*body*/}
@@ -58,6 +58,21 @@ export default function Modal({ showModal, setShowModal }) {
                     </div>
                     <input
                       className="ml-44 h-8 w-72 shadow-md rounded-lg text-center"
+                      id="title"
+                      type="text"
+                    />
+                  </div>
+                  <div className="flex ml-5 p-5">
+                    <div>
+                      <label className="text-black text-sm" htmlFor="title">
+                        short description
+                      </label>
+                      <p className="text-xs text-gray-500">
+                        write a brief description of the cause 
+                      </p>
+                    </div>
+                    <input
+                      className="ml-28 h-8 w-72 shadow-md rounded-lg text-center"
                       id="title"
                       type="text"
                     />
@@ -91,7 +106,7 @@ export default function Modal({ showModal, setShowModal }) {
                     <input
                       className="ml-20 w-72 shadow-md rounded-lg"
                       id="bg-image"
-                      type="image"
+                      type="file"
                     />
                   </div>
                   <div className="flex ml-5 p-5">

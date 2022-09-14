@@ -8,6 +8,7 @@ import { GiSandsOfTime } from 'react-icons/gi';
 import { BiDollarCircle } from 'react-icons/bi';
 import { BsCheckCircle } from 'react-icons/bs';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import styles from '../styles/Home.module.css';
 
 const FundingProgram = () => {
   const [verify, setVerify] = useState(true);
@@ -51,7 +52,7 @@ const FundingProgram = () => {
     router.push(`/completed/8`);
   };
   return (
-    <div>
+    <div className={styles.home}>
       <Layout>
         <div className="w-full mt-10">
           <div>

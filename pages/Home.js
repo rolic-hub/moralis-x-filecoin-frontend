@@ -26,7 +26,7 @@ const HomePage = () => {
           </p>
           <button
             onClick={starter}
-            className="mt-20 p-2 pl-3 pr-3 text-black font-bold shadow-lg rounde bg-gradient-to-b from-green-600 to-black ml-10"
+            className="mt-20 p-2 pl-3 pr-3 text-black font-bold shadow-lg bg-green-600  dark:bg-gradient-to-b from-green-600 to-black ml-10"
           >
             {' '}
             Get Started

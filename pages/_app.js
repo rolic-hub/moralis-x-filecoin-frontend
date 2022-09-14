@@ -8,9 +8,14 @@ function MyApp({ Component, pageProps }) {
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
         chains={chains}
-        // theme={darkTheme({
-        //   ...darkTheme.accentColors.green,
-        // })}
+        theme={darkTheme({
+          // ...darkTheme.accentColors.green
+          accentColor: '#13DA92',
+          accentColorForeground: 'white',
+          borderRadius: 'medium',
+          fontStack: 'system',
+          overlayBlur: 'small'
+        })}
       >
         <Component {...pageProps} />
       </RainbowKitProvider>

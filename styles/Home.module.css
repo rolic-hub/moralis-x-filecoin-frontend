@@ -114,7 +114,26 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+
+.loginGreenSide{
+
+  background-color: #13DA92;
+  height: 100vh;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+ /* border: 2px solid black; */
+}
+
+
+.loginWhiteSide{
+  background-color: #FFFFFF;
+  height: 100vh;
+  width: 55%;
+  border-radius: 3rem  0rem 0rem 3rem;
+  /* border: 2px solid black; */
+}
+/* @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -132,4 +151,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */

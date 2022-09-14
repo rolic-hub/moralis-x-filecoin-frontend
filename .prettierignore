@@ -6,3 +6,7 @@ node_modules
 next-env.d.ts
 next.config.ts
 yarn.lock
+
+
+index.js
+Home.js

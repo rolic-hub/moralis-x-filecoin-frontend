@@ -1,9 +1,9 @@
-import { useState } from "react";
-import React from "react";
-import Layout from "../components/Layout";
-import Image from "next/image";
-import program1 from "../assest/program1.png";
-import Modal from "../components/modalComponent";
+import { useState } from 'react';
+import React from 'react';
+import Layout from '../../components/Layout';
+import Image from 'next/image';
+import program1 from '../assest/program1.png';
+import Modal from '../../components/modalComponent';
 
 const MyfundingProjects = () => {
   const [showModal, setShowModal] = useState(false);

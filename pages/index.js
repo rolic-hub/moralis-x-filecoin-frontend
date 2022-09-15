@@ -8,7 +8,6 @@ import { COnnectButton } from '../components/connectButton';
 import { useRouter } from 'next/router';
 import { useAccount } from 'wagmi';
 import styles from '../styles/Home.module.css';
-import Logo from '../public/logo.png';
 
 export default function Home() {
   const { isConnecting, isConnected, isDisconnected } = useAccount();

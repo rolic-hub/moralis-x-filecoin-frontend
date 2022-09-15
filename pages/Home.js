@@ -15,7 +15,7 @@ const HomePage = () => {
       <Navbar />
       <div className="flex">
         <div className="p-10 w-7/12 pt-32">
-          <p className="text-4xl font-bold text-green-500 text-gradient bg-gradient-to-r from-green-600 to-blue-500  pb-10">
+          <p className="text-4xl font-bold text-green-500 text-gradient bg-gradient-to-r from-green-600 via-blue-400 to-blue-500  pb-10">
             A place where you can gather funding for your projects
           </p>
           <p className="text-2xl dark:text-green-600 leading-loose">

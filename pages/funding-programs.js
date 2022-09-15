@@ -178,6 +178,24 @@ const FundingProgram = () => {
               />
             </div>
           )}
+          {reject && (
+            <div>
+              <CauseBox
+                addbutton={true}
+                addProgress={false}
+                buttonText="Rejected"
+                image={program1}
+                message=" Help us fight feed thousands of people in poverty, homeless
+                  people and provide medical care for the poor"
+                progressAmount="1000/1000"
+                progressValue={100}
+                title="Health care program"
+                buttonDesign={`mt-5 bg-red-600 font-semibold p-1 ml-20 text-white text-xs rounded-md mb-3`}
+                progressDesign={`ml-10 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
+                boxDesign="w-60 dark:shadow-red-600"
+              />
+            </div>
+          )}
         </div>
       </Layout>
     </div>

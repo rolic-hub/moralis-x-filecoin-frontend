@@ -36,7 +36,7 @@ export default function NftModal({ showModal, setShowModal }) {
                             Mint default Nft:
                           </p>
                           <div className="flex">
-                            <p className="flex text-sm ml-2 mr-2">Image - </p>
+                            <p className="flex text-sm ml-2 mr-2">Image  </p>
                             <div>
                               <Image
                                 height="100px"
@@ -47,7 +47,7 @@ export default function NftModal({ showModal, setShowModal }) {
                             </div>
                           </div>
                           <div className="flex">
-                            <p className="text-sm ml-2 mr-2 mt-2">Title - </p>
+                            <p className="text-sm ml-2 mr-2 mt-2">Title   </p>
                             <p className="text-sm border-2 p-1 rounded-lg ml-2 ">
                               A Goodwill nft
                             </p>
@@ -58,7 +58,7 @@ export default function NftModal({ showModal, setShowModal }) {
                             Mint custom Nft:
                           </p>
                           <div className="flex">
-                            <p className="flex text-sm ml-2 mr-2">Image - </p>
+                            <p className="flex text-sm ml-2 mr-2">Image  </p>
                             <div>
                               <input
                                 type="file"
@@ -67,7 +67,7 @@ export default function NftModal({ showModal, setShowModal }) {
                             </div>
                           </div>
                           <div className="flex mt-5">
-                            <p className="text-sm ml-2 mr-2 mt-2">Title - </p>
+                            <p className="text-sm ml-2 mr-2 mt-2">Title   </p>
                             <input
                               type="text"
                               className="w-36 rounded-lg border "

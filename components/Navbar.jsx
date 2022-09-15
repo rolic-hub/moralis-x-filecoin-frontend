@@ -32,7 +32,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex border-b-4 border-black dark:border-green-600 p-5 justify-between">
+    <div className="flex border-b-4 border-black dark:border-green-600 bg-black-background text-Text-green p-5 justify-between">
       <div className="flex hover:cursor-pointer" onClick={backHome}>
         {' '}
         <div className="pl-5 pr-5">
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div>
           <p
             onClick={homeclick}
-            className="text-2xl text-green-600  hover:cursor-pointer font-bold mr-5 mt-3"
+            className="text-2xl text-green-600  hover:cursor-pointer font-bold mr-5 mt-3 hover:scale-110 transition ease-in duration-150"
           >
             Home
           </p>
@@ -57,7 +57,7 @@ const Navbar = () => {
         <div>
           <p
             onClick={mainpageclick}
-            className="text-2xl text-green-600 font-bold mt-3  hover:cursor-pointer"
+            className="text-2xl text-green-600 font-bold mt-3  hover:cursor-pointer hover:scale-110 transition ease-in duration-150"
           >
             Main Page
           </p>

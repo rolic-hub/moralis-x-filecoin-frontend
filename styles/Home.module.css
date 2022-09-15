@@ -93,7 +93,7 @@
 }
 
 .gradientText {
-  background-image: linear-gradient(180deg,#00ffa2be , #13da91b6 , #00ffff );
+  background-image: linear-gradient(to right, #00ffa2 , #29c39f   , #22bbbb );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

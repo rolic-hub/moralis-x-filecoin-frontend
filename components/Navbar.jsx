@@ -32,7 +32,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex border-b-4 border-black dark:border-green-600 bg-black-background text-Text-green p-5 justify-between">
+    <div className="flex border-b-3 border-black dark:border-green-600 bg-black-background text-Text-green p-5 justify-between">
       <div className="flex hover:cursor-pointer" onClick={backHome}>
         {' '}
         <div className="pl-5 pr-5">
@@ -51,7 +51,7 @@ const Navbar = () => {
             Home
           </p>
           {router.pathname === '/Home' && (
-            <hr className="h-1 rounded-lg w-16 bg-green-500 mr-5" />
+            <hr className="h-1 rounded-lg w-16 bg-Text-green mr-5" />
           )}
         </div>
         <div>
@@ -64,7 +64,7 @@ const Navbar = () => {
           {(router.pathname === '/overview' ||
             router.pathname === '/my-funding-projects' ||
             router.pathname === '/funding-programs') && (
-            <hr className="h-1 rounded-lg w-28 bg-green-500 mr-5" />
+            <hr className="h-1 rounded-lg w-28 bg-Text-green  mr-5" />
           )}
         </div>
       </div>

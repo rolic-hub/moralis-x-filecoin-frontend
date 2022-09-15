@@ -22,26 +22,31 @@ const HomePage = () => {
       <Navbar />
 
       <div className="flex  ">
-        <div className="p-10 w-7/12 pt-32">
-          {/* <button onClick={() => disconnect()}> Disconnect</button>
-          <button onClick={() => account}> Disconnect</button> */}
-          <p className="text-3xl font-bold text-green-500 pb-10">
-            A place where you can gather funding for your projects
+        <div className="m-10 w-7/12   justify-end items-end">
+          <p className="text-5xl font-bold text-green-500 mb-8  w-10/12">
+            <span className={styles.gradientText}>
+              A place where you can gather funding for your projects
+            </span>
           </p>
-          <p className="text-2xl dark:text-green-600 leading-relaxed">
+
+          <p className="text-2xl dark:text-green-600  leading-extra-loose  w-9/12">
             Funder is a web3 charity funding platform. Where organizers could
             post projects and gather funding for your project in a decentralized
             and transparent manner. Users can donate with crypto currency and
             help others in their goal
           </p>
+
+          <button className={styles.gradientButton}>
+            <span className="px-5 mt-3  py-8 font-semibold text-black-background  ">
+              {' '}
+              Get Started
+            </span>
+          </button>
         </div>
-        <div>
+        <div className="w-5/12 justify-end items-end">
           <Image src={donate} alt="donate-funds" />
         </div>
       </div>
-      <p className="text-center text-3xl text-green-500 font-bold">
-        What we are all about
-      </p>
     </div>
   );
 };

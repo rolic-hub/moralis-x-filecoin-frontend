@@ -38,7 +38,11 @@ module.exports = {
       'white-background': '#ffffff',
       gray: '#575151'
     },
-    extend: {}
+    extend: {
+      lineHeight: {
+        'extra-loose': '3rem'
+      }
+    }
   },
   plugins: [require('@tailwindcss/line-clamp')]
 };

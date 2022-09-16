@@ -37,7 +37,8 @@ module.exports = {
       'light-green': '#12ECA0',
       'black-background': '#151515',
       'white-background': '#ffffff',
-      gray: '#575151'
+      gray: '#575151',
+      form: '#221F1F'
     },
     extend: {
       lineHeight: {
@@ -47,10 +48,24 @@ module.exports = {
         '3xl': '0 35px 60px -15px rgba(256, 256, 256, 1)'
       },
       width: {
-        'full-screen': '100vh'
+        custom1: '40rem',
+        custom2: '50rem',
+        custom3: '40rem',
+        custom4: '40rem',
+        custom5: '40rem',
+        custom6: '40rem'
       },
       margin: {
-        custom: '36rem'
+        custom: '36rem',
+        form1: '19.5rem',
+        form2: '16.5rem',
+        form3: '17rem',
+        form4: '18rem',
+        form5: '18rem',
+        form6: '21.5rem',
+        form7: '20rem',
+        form8: '21rem',
+        form9: '22rem'
       }
     }
   },

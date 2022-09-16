@@ -21,7 +21,7 @@ const HomePage = () => {
     <div className={styles.home}>
       <Navbar />
 
-      <div className="flex  ">
+      <div className="flex black dark:Text-green border-black  ">
         <div className="m-10 w-7/12   justify-end items-end">
           <p className="text-5xl font-bold text-green-500 mb-8  w-10/12">
             <span className={styles.gradientText}>

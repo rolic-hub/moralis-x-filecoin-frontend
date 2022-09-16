@@ -32,7 +32,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex border-b-3 border-black dark:border-green-600 bg-black-background text-Text-green p-5 justify-between">
+    <div className="flex border-b-3 border-Text-green  bg-black-background text-Text-green p-5 justify-between">
       <div className="flex hover:cursor-pointer" onClick={backHome}>
         {' '}
         <div className="pl-5 pr-5">

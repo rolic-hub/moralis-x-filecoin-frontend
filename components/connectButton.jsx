@@ -87,7 +87,7 @@ export const COnnectButton = () => {
                     onClick={openChainModal}
                     style={{ display: 'flex', alignItems: 'center' }}
                     type="button"
-                    className="text-custom  flex items-center justify-center mr-4 hover:scale-110 transition ease-in duration-150"
+                    className="text-lg  text-light-green  flex items-center justify-center mr-4 hover:scale-110 transition ease-in duration-150"
                   >
                     {chain.hasIcon && (
                       <div
@@ -97,7 +97,7 @@ export const COnnectButton = () => {
                           height: 28,
                           borderRadius: 999,
                           overflow: 'hidden',
-                          marginRight: 4
+                          marginRight: 6
                         }}
                       >
                         {chain.iconUrl && (
@@ -110,7 +110,7 @@ export const COnnectButton = () => {
                       </div>
                     )}
                     {chain.name}
-                    <span className="items-center justify-center mt-3 ml-1">
+                    <span className="items-center justify-center mt-2 ml-1  ">
                       <Image src={down} alt="Down Button" />
                     </span>
                   </button>
@@ -118,7 +118,7 @@ export const COnnectButton = () => {
                   <button
                     onClick={openAccountModal}
                     type="button"
-                    className="text-custom  flex items-center justify-center mr-2 hover:scale-110 transition ease-in duration-150 "
+                    className="text-xl flex items-center justify-center mr-2 hover:scale-110 transition ease-in duration-150 "
                   >
                     <span className="items-center justify-center w-9 h-9 mr-2">
                       <Image src={profile} alt="Down Button" />

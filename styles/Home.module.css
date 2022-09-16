@@ -92,6 +92,14 @@
  height: 100vh;
 }
 
+.NewProgram {
+  background-color: #141313;
+ color: #13DA92;
+ height: 100vh;
+ 
+}
+
+
 .gradientText {
   background-image: linear-gradient(to right, #00ffa2 , #29c39f   , #22bbbb );
   -webkit-background-clip: text;
@@ -145,6 +153,13 @@
   width: 55%;
   border-radius: 3rem  0rem 0rem 3rem;
   /* border: 2px solid black; */
+}
+
+
+.boxShadow {
+
+  box-shadow: 0 4px 8px 0 rgba(18, 236, 160, 0.9);
+   /* , 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
 }
 /* @media (max-width: 600px) {
   .grid {

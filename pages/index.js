@@ -9,6 +9,7 @@ import { useRouter } from 'next/router';
 import { useAccount } from 'wagmi';
 import styles from '../styles/Home.module.css';
 
+// LOGIN PAGE
 export default function Home() {
   const { isConnecting, isConnected, isDisconnected } = useAccount();
   const router = useRouter();

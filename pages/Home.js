@@ -16,27 +16,30 @@ const HomePage = () => {
   //     router.push('/index.js');
   //   }
   // });
+  const mainpageclick = () => {
+    router.push('/profile/8'); // DYNAMIC
+  };
 
   return (
     <div className={styles.home}>
       <Navbar />
 
-      <div className="flex black dark:Text-green border-black  ">
+      <div className="flex   ">
         <div className="m-10 w-7/12   justify-end items-end">
-          <p className="text-5xl font-bold text-green-500 mb-8  w-10/12">
+          <p className="text-5xl font-bold   mb-8  w-10/12">
             <span className={styles.gradientText}>
               A place where you can gather funding for your projects
             </span>
           </p>
 
-          <p className="text-2xl dark:text-green-600  leading-extra-loose  w-9/12">
+          <p className="text-2xl    leading-extra-loose  w-9/12">
             Funder is a web3 charity funding platform. Where organizers could
             post projects and gather funding for your project in a decentralized
             and transparent manner. Users can donate with crypto currency and
             help others in their goal
           </p>
 
-          <button className={styles.gradientButton}>
+          <button className={styles.gradientButton} onClick={mainpageclick}>
             <span className="px-5 mt-3  py-8 font-bold text-black-background  ">
               {' '}
               Get Started

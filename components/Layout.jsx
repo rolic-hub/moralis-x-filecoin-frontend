@@ -7,18 +7,18 @@ const Layout = ({ children }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const router = useRouter();
   const notClicked =
-    'bg-green-600 hover:bg-green-800 rounded-lg pr-16 pb-1 pt-1 pl-2 mb-4 font-bold text-left';
+    'bg-green-600 hover:bg-green-800 rounded-lg pr-16 pb-1 pt-1 pl-6 mb-4 font-bold text-left';
 
   const onClickedOn =
-    'bg-Text-green text-black-background rounded-lg pr-16 pb-1 pt-1 pl-2  mb-4    font-bold text-left ';
+    'bg-light-green text-black-background rounded-lg pr-16 pb-1 pt-1 pl-6  mb-4   font-bold text-left ';
 
   const _profilepage = () => {
     setCurrentPage(0);
-    router.push('/profile/8');
+    router.push('/profile/8'); // Make this Dynamic
   };
   const _fundingPage = () => {
     setCurrentPage(1);
-    router.push('/my-funding-projects');
+    router.push('/my-funding-projects/1'); // Make this Dynamic
   };
   const _fundingProgram = () => {
     setCurrentPage(2);
@@ -26,12 +26,12 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className="bg-black-background text-Text-green">
+    <div className="bg-black-background text-light-green">
       <Navbar />
-      <hr className="h-1 rounded-lg w-full bg-Text-green " />
+      <hr className="h-1 rounded-lg w-full bg-light-green " />
       <div className="flex">
-        <div className="flex w-80 h-full border-r-4 border-Text-green">
-          <div className="flex flex-col m-10 h-screen">
+        <div className="flex w-80 h-full border-r-4 border-light-green">
+          <div className="flex flex-col mt-10 ml-5 h-screen">
             <button
               className={currentPage === 0 ? onClickedOn : notClicked}
               onClick={_profilepage}

@@ -29,11 +29,12 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
-      custom: '24px'
+      custom: '22px'
     },
 
     colors: {
       'Text-green': '#13DA92',
+      'light-green': '#12ECA0',
       'black-background': '#151515',
       'white-background': '#ffffff',
       gray: '#575151'
@@ -41,6 +42,15 @@ module.exports = {
     extend: {
       lineHeight: {
         'extra-loose': '3rem'
+      },
+      CustomShadow: {
+        '3xl': '0 35px 60px -15px rgba(256, 256, 256, 1)'
+      },
+      width: {
+        'full-screen': '100vh'
+      },
+      margin: {
+        custom: '36rem'
       }
     }
   },

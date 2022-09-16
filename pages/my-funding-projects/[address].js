@@ -2,27 +2,35 @@ import { useState } from 'react';
 import React from 'react';
 import Layout from '../../components/Layout';
 import Image from 'next/image';
-import program1 from '../assest/program1.png';
-import Modal from '../../components/modalComponent';
-
+import program1 from '../../assest/program1.png';
+// import Modal from '../../components/modalComponent';
+import { useRouter } from 'next/router';
 const MyfundingProjects = () => {
   const [showModal, setShowModal] = useState(false);
+  const router = useRouter();
+
+  const CreateNewProgram = () => {
+    router.push('/Create-new-program');
+  };
+
   return (
     <div>
       <Layout>
         <div className="p-10">
           <div className="flex">
-            <p className="text-3xl font-bold text-green-600">
+            <div className="text-3xl font-bold text-green-600">
               My Funding projects
-            </p>
+            </div>
             <button
-              className="ml-96 rounded-lg p-2 font-semibold bg-green-600"
-              onClick={() => setShowModal(true)}
+              className="bg-light-green px-4 py-1 text-black-background ml-custom rounded-md h-fit items-end justify-end font-bold text-xl hover:scale-110 transition ease-in duration-150"
+              // className="bg-light-green px-4 py-1 text-black-background rounded-md h-fit font-bold text-xl "
+              // onClick={() => setShowModal(true)}
+              onClick={CreateNewProgram()}
             >
-              Create a new cause
+              Create new program
             </button>
           </div>
-          <Modal showModal={showModal} setShowModal={setShowModal} />
+          {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
           <div className="mt-10 border rounded-lg shadow-md w-60">
             <Image
               src={program1}

@@ -20,7 +20,7 @@ const Navbar = () => {
     router.push('/Home');
   };
   const mainpageclick = () => {
-    router.push('/overview');
+    router.push('/profile/8'); // DYNAMIC
   };
 
   // if (isConnected) {
@@ -32,8 +32,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex border-b-3 border-Text-green  bg-black-background text-Text-green p-5 justify-between">
-      <div className="flex hover:cursor-pointer" onClick={backHome}>
+    <div className="flex border-b-3 border-Text-green bg-black-background text-Text-green p-3 justify-between items-center  ">
+      <div
+        className="flex hover:cursor-pointer items-center "
+        onClick={backHome}
+      >
         {' '}
         <div className="pl-5 pr-5">
           <Image src={vector} alt="logo" />
@@ -42,7 +45,7 @@ const Navbar = () => {
           <Image src={Funder} alt="funders" />
         </div>
       </div>
-      <div className="flex">
+      <div className="flex items-center -mt-2">
         <div>
           <p
             onClick={homeclick}
@@ -61,7 +64,7 @@ const Navbar = () => {
           >
             Main Page
           </p>
-          {(router.pathname === '/overview' ||
+          {(router.pathname === '/profile/8' ||
             router.pathname === '/my-funding-projects' ||
             router.pathname === '/funding-programs') && (
             <hr className="h-1 rounded-lg w-28 bg-Text-green  mr-5" />

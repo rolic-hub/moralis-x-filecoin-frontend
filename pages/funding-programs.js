@@ -9,7 +9,7 @@ import { BiDollarCircle } from 'react-icons/bi';
 import { BsCheckCircle } from 'react-icons/bs';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import styles from '../styles/Home.module.css';
-
+import Footer from '../components/footer';
 const FundingProgram = () => {
   const [verify, setVerify] = useState(true);
   const [progress, setProgress] = useState(false);
@@ -185,6 +185,7 @@ const FundingProgram = () => {
           )}
         </div>
       </Layout>
+      <Footer />
     </div>
   );
 };

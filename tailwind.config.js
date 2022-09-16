@@ -38,7 +38,8 @@ module.exports = {
       'black-background': '#151515',
       'white-background': '#ffffff',
       gray: '#575151',
-      form: '#221F1F'
+      form: '#221F1F',
+      DarkBlack: '#000000'
     },
     extend: {
       lineHeight: {
@@ -50,7 +51,7 @@ module.exports = {
       width: {
         custom1: '40rem',
         custom2: '50rem',
-        custom3: '40rem',
+        custom3: '30rem',
         custom4: '40rem',
         custom5: '40rem',
         custom6: '40rem'

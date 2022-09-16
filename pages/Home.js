@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 import { useAccount } from 'wagmi';
 import { useRouter } from 'next/router';
 import { useDisconnect } from 'wagmi';
-
+import Footer from '../components/footer';
 const HomePage = () => {
   const { disconnect } = useDisconnect();
   const router = useRouter();
@@ -50,6 +50,7 @@ const HomePage = () => {
           <Image src={donate} alt="donate-funds" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

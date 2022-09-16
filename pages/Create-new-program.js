@@ -5,11 +5,23 @@ import Image from 'next/image';
 import Funder from '../assest/Funder.png';
 import vector from '../assest/Vector.png';
 import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
+import Footer from '../components/footer';
 function CreateNewProgram() {
+  const router = useRouter();
+  const _fundingPage = () => {
+    router.push('/funding-programs'); // Make this Dynamic
+  };
   return (
     <div className={styles.NewProgram}>
       <Navbar />
-      <div className="mx-56 mt-10">
+      <button
+        onClick={_fundingPage}
+        className="px-8 py-2 rounded-lg ml-24 mt-10 font-bold text-DarkBlack  bg-Text-green  DarkBlack "
+      >
+        Back
+      </button>
+      <div className="mx-56 mt-5">
         <div className=" text-3xl font-bold text-light-green ml-24 mt-4  mb-12">
           Create New Funding Program
         </div>
@@ -20,11 +32,12 @@ function CreateNewProgram() {
               Program Name
             </h1>
 
-            <div className="flex ">
+            <div className="flex text-left">
               <input
                 className="ml-form1 h-10 w-custom1  shadow-md rounded-lg bg-form text-center border-2"
-                id="title"
+                id="Program Name"
                 type="text"
+                required
               />
             </div>
           </div>
@@ -40,6 +53,7 @@ function CreateNewProgram() {
                 className="ml-form2 h-10 w-custom1 shadow-md rounded-lg bg-form text-center border-2"
                 id="title"
                 type="text"
+                required
               />
             </div>
           </div>
@@ -84,6 +98,7 @@ function CreateNewProgram() {
               <input
                 className="ml-form5 h-9 w-96 shadow-md rounded-lg bg-form text-center border-2"
                 id="title"
+                // type="image"
                 type="text"
               />
             </div>
@@ -100,6 +115,7 @@ function CreateNewProgram() {
                 className="ml-form6 h-9 w-96 shadow-md rounded-lg bg-form text-center border-2"
                 id="title"
                 type="text"
+                required
               />
             </div>
           </div>
@@ -115,6 +131,7 @@ function CreateNewProgram() {
                 className="ml-form7 h-9 w-96 shadow-md rounded-lg bg-form text-center border-2"
                 id="title"
                 type="text"
+                required
               />
             </div>
           </div>
@@ -142,15 +159,23 @@ function CreateNewProgram() {
 
             <div className="flex ">
               <input
-                className="ml-form9 h-9 w-50 shadow-md rounded-lg bg-form text-center border-2"
+                className="ml-form9 h-10 w-40 shadow-md rounded-lg bg-form text-start border-2"
                 id="title"
                 type="text"
+                required
               />
-              <span className="mt-1 -ml-12">ETH</span>
+              <span className="mt-2 -ml-12">ETH</span>
             </div>
           </div>
+
+          <button className={styles.gradientButton2}>
+            <span className="px-5   py-8 font-bold text-black-background  ">
+              Submit
+            </span>
+          </button>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }

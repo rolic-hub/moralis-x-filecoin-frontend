@@ -16,7 +16,7 @@ const MyfundingProjects = () => {
   return (
     <div>
       <Layout>
-        <div className="p-10">
+        <div className="p-10 ml-24">
           <div className="flex">
             <div className="text-3xl font-bold text-green-600">
               My Funding projects

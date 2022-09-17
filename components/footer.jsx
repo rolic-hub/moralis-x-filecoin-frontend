@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-black-background  border-gray-100">
-      <div className="max-w-96 mt-8  mx-auto py-12 px-8 ml-4 mr-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+    <footer className="bg-footer text-light-green border-gray-100">
+      <div className="max-w-96   mx-auto py-12 px-8 ml-4 mr-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <a href="#" className="text-base text-gray-500 hover:text-gray-900">
             Moralis x Filecoin

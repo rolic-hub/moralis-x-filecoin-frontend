@@ -7,11 +7,82 @@ import vector from '../assest/Vector.png';
 import styles from '../styles/Home.module.css';
 import { useRouter } from 'next/router';
 import Footer from '../components/footer';
+
 function CreateNewProgram() {
   const router = useRouter();
   const _fundingPage = () => {
     router.push('/funding-programs'); // Make this Dynamic
   };
+
+  //   async function handleSubmit(e) {
+  //     e.preventDefault();
+
+  //     const body = {
+  //       name: eventName,
+  //       description: eventDescription,
+  //       link: eventLink,
+  //       image: getRandomImage(),
+  //     };
+
+  //     try {
+  //       const response = await fetch("/api/store-event-data", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/json" },
+  //         body: JSON.stringify(body),
+  //       });
+  //       if (response.status !== 200) {
+  //         alert("Oops! Something went wrong. Please refresh and try again.");
+  //       } else {
+  //         console.log("Form successfully submitted!");
+  //         let responseJSON = await response.json();
+  //         await createEvent(responseJSON.cid);
+  //       }
+  //       // check response, if success is false, dont take them to success page
+  //     } catch (error) {
+  //       alert(
+  //         `Oops! Something went wrong. Please refresh and try again. Error ${error}`
+  //       );
+  //     }
+  //   }
+
+  //   const createEvent = async (cid) => {
+  //     try {
+  //       const rsvpContract = connectContract();
+
+  //       if (rsvpContract) {
+  //         let deposit = ethers.utils.parseEther(refund);
+  //         let eventDateAndTime = new Date(`${eventDate} ${eventTime}`);
+  //         let eventTimestamp = eventDateAndTime.getTime();
+  //         let eventDataCID = cid;
+
+  //         const txn = await rsvpContract.createNewEvent(
+  //           eventTimestamp,
+  //           deposit,
+  //           maxCapacity,
+  //           eventDataCID,
+  //           { gasLimit: 900000 }
+  //         );
+  //         setLoading(true);
+  //         console.log("Minting...", txn.hash);
+  //         let wait = await txn.wait();
+  //         console.log("Minted -- ", txn.hash);
+
+  //         setEventID(wait.events[0].args[0]);
+
+  //         setSuccess(true);
+  //         setLoading(false);
+  //         setMessage("Your event has been created successfully.");
+  //       } else {
+  //         console.log("Error getting contract.");
+  //       }
+  //     } catch (error) {
+  //       setSuccess(false);
+  //       setMessage(`There was an error creating your event: ${error.message}`);
+  //       setLoading(false);
+  //       console.log(error);
+  //     }
+  //   };
+
   return (
     <div className={styles.NewProgram}>
       <Navbar />

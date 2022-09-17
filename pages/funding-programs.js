@@ -56,7 +56,7 @@ const FundingProgram = () => {
       <Layout>
         <div className="w-full ">
           <div className="mt-10 flex">
-            <p className="text-light-green font-bold ml-20 text-3xl   ">
+            <p className="text-light-green font-bold ml-24 text-3xl   ">
               Funding programs
             </p>
             <button className="bg-light-green px-4   text-black-background ml-custom rounded-md   font-bold text-xl hover:scale-110 transition ease-in duration-150">
@@ -64,7 +64,7 @@ const FundingProgram = () => {
             </button>
           </div>
 
-          <div className="flex 4 ml-20 mt-10 mr-80">
+          <div className="flex 4 ml-24 mt-10 mr-80">
             <div>
               <p
                 onClick={verifyClick}

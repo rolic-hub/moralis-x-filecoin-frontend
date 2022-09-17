@@ -40,7 +40,7 @@ const HomePage = () => {
           </p>
 
           <button className={styles.gradientButton} onClick={mainpageclick}>
-            <span className="px-5 mt-3  py-8 font-bold text-black-background  ">
+            <span className="px-5   py-8 font-bold text-black-background  ">
               {' '}
               Get Started
             </span>

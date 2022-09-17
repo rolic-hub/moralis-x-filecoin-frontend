@@ -36,6 +36,7 @@ module.exports = {
       'Text-green': '#13DA92',
       'light-green': '#12ECA0',
       'black-background': '#151515',
+      footer: '#151313',
       'white-background': '#ffffff',
       gray: '#575151',
       form: '#221F1F',
@@ -67,6 +68,9 @@ module.exports = {
         form7: '20rem',
         form8: '21rem',
         form9: '22rem'
+      },
+      height: {
+        fullPage: '140vh'
       }
     }
   },

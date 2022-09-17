@@ -26,11 +26,11 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className="bg-black-background text-light-green">
+    <div className="bg-black-background text-light-green ">
       <Navbar />
       <hr className="h-1 rounded-lg w-full bg-light-green " />
-      <div className="flex">
-        <div className="flex w-80 h-full border-r-4 border-light-green">
+      <div className="flex ml-6 ">
+        <div className="flex w-80   border-r-4 border-light-green">
           <div className="flex flex-col mt-10 ml-5 h-screen">
             <button
               className={currentPage === 0 ? onClickedOn : notClicked}

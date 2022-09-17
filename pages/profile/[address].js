@@ -6,12 +6,13 @@ import program1 from '../../assest/program1.png';
 import Layout from '../../components/Layout';
 import Person from '../../assest/person.png';
 import styles from '../../styles/Home.module.css';
+import Footer from '../../components/footer';
 
 const ProfilePage = () => {
   return (
     <div>
       <Layout>
-        <div className="flex ml-10 text-light-green">
+        <div className="flex ml-24 h-fullPage text-light-green ">
           <div>
             <div className="inline-flex">
               <p className="text-4xl mr-56 ml-5 font-bold   mt-7">My Profile</p>
@@ -89,6 +90,7 @@ const ProfilePage = () => {
           </div>
         </div>
       </Layout>
+      <Footer />
     </div>
   );
 };

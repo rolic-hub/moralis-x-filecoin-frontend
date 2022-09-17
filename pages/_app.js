@@ -24,3 +24,5 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+
+// npm install web3.storage

@@ -31,6 +31,9 @@ module.exports = {
       '7xl': '5rem',
       custom: '22px'
     },
+    maxWidth: {
+      button: '7rem'
+    },
 
     colors: {
       'Text-green': '#13DA92',
@@ -42,9 +45,11 @@ module.exports = {
       form: '#221F1F',
       DarkBlack: '#000000',
       orange: '#ea580c',
+      lightOrange: '#FF7F27',
       darkGreen: '#39BF97',
       progressBar: '#D9D9D9',
       red: '#CB0E3B',
+      lightRed: '#FF2727',
       blue: '#2399B4'
     },
     extend: {
@@ -78,7 +83,8 @@ module.exports = {
         form9: '22rem'
       },
       height: {
-        fullPage: '140vh'
+        fullPage: '140vh',
+        fullScreen: '100vh'
       }
     }
   },

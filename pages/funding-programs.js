@@ -18,6 +18,10 @@ const FundingProgram = () => {
   const router = useRouter();
   const clicked = 'text-orange-600';
 
+  const detailPage = () => {
+    router.push(`/detail/1`); //Dyamic
+  };
+
   const verifyClick = () => {
     setProgress(false);
     setCompleted(false);
@@ -145,7 +149,7 @@ const FundingProgram = () => {
                 title="Health care program"
                 buttonDesign={`mt-5 bg-orange p-1 ml-1  px-6 py-2 ml-2  text-white-background font-bold text-xs rounded-md mb-3`}
                 progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
-                onClicked={progressButton}
+                onClicked={verifyButton}
                 boxDesign="w-60 shadow-orange w-custom4  ml-20 "
                 textColor={`darkGreen`}
                 addDescription={true}

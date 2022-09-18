@@ -100,7 +100,24 @@
  
 }
 
+.videoWrapper {
+  height: 25rem;
+  width: 100%;
+  object-fit: contain;
+   
+  max-width: 700px;
+ }
 
+ .ImageWrapper {
+  
+  object-fit: contain;
+ 
+ 
+ }
+
+
+
+  
 .gradientText {
   background-image: linear-gradient(to right, #00ffa2 , #29c39f   , #22bbbb );
   -webkit-background-clip: text;

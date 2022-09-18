@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-
+import { useRouter } from 'next/router';
 const CauseBox = ({
   addbutton,
   buttonDesign,
@@ -18,6 +18,11 @@ const CauseBox = ({
   textColor,
   addDescription
 }) => {
+  const router = useRouter();
+  const detailPage = () => {
+    router.push(`/detailPage/1`); //Dyamic detail page
+  };
+
   return (
     <div
       className={`mt-10 rounded-lg   transition ease-in duration-150 hover:scale-105   ${boxDesign} `}
@@ -28,10 +33,16 @@ const CauseBox = ({
         height="150px"
         alt="program-1"
         className=" rounded-lg"
+        onClick={detailPage}
       />
-      <p className={`font-bold ml-2 text-${textColor}`}>{title}</p>
+      <p className={`font-bold ml-2 text-${textColor}`} onClick={detailPage}>
+        {title}
+      </p>
       {addDescription && (
-        <p className={`text-xs mt-2 leading-normal text-left ml-2 font-bold `}>
+        <p
+          className={`text-xs mt-2 leading-normal text-left ml-2 font-bold `}
+          onClick={detailPage}
+        >
           {message}
         </p>
       )}

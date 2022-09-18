@@ -50,7 +50,8 @@ module.exports = {
       progressBar: '#D9D9D9',
       red: '#CB0E3B',
       lightRed: '#FF2727',
-      blue: '#2399B4'
+      blue: '#2399B4',
+      lightBlue: '#00C0F4'
     },
     extend: {
       lineHeight: {
@@ -60,7 +61,8 @@ module.exports = {
         green: '0px 0.28rem 0.28rem 0px rgba(18, 236, 160, 1)',
         orange: '0px 0.28rem 0.28rem  0px rgba(255, 127, 39, 1)',
         red: '0px 0.28rem 0.28rem  0px rgba(194, 5, 51, 1)',
-        blue: '0px 0.28rem 0.28rem  0px rgba(14, 182, 235 , 1)'
+        blue: '0px 0.28rem 0.28rem  0px rgba(14, 182, 235 , 1)',
+        lightBlue: '0px 0.28rem 0.28rem  0px rgba(0, 192, 244 , 1)'
       },
       width: {
         custom1: '40rem',

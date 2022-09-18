@@ -263,9 +263,9 @@ const FundingProgram = () => {
               progressValue={100}
               title="Health care program"
               buttonDesign={`mt-5 bg-blue font-semibold  ml-2 px-4 py-0 text-white-background text-xs rounded-md mb-3`}
-              progressDesign={`ml-16 h-4 bg-blue rounded-lg bg-transparent mb-3 w-28`}
+              progressDesign={`ml-16 h-4 bg-lightBlue rounded-lg bg-transparent mb-3 w-28`}
               onClicked={completedButton}
-              boxDesign="w-60 shadow-blue w-custom4  ml-20 "
+              boxDesign="w-60 shadow-lightBlue w-custom4  ml-20 "
               textColor={`darkGreen`}
               addDescription={true}
             />

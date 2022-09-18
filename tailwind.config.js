@@ -62,7 +62,7 @@ module.exports = {
         custom2: '50rem',
         custom3: '80rem',
         custom4: '18rem',
-        custom5: '40rem',
+        custom5: '100%',
         custom6: '40rem'
       },
       margin: {

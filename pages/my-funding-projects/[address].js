@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Image from 'next/image';
 import program1 from '../../assest/program1.png';
+import CauseBox from '../../components/causeBox';
 // import Modal from '../../components/modalComponent';
 import { useRouter } from 'next/router';
 const MyfundingProjects = () => {
@@ -17,20 +18,33 @@ const MyfundingProjects = () => {
   return (
     <div>
       <Layout>
-        <div className="p-10 ml-24">
-          <div className="flex">
-            <div className="text-3xl font-bold  ">My Funding projects</div>
-            <button
-              className="bg-light-green px-4 py-1 text-black-background ml-custom rounded-md h-fit items-end justify-end font-bold text-xl hover:scale-110 transition ease-in duration-150"
-              // className="bg-light-green px-4 py-1 text-black-background rounded-md h-fit font-bold text-xl "
-              // onClick={() => setShowModal(true)}
-              onClick={CreateNewProgram}
-            >
-              Create new program
-            </button>
-          </div>
-          {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
-          <div className="mt-10 border rounded-lg text-darkGreen shadow-green w-72">
+        <div className="flex m-14">
+          <div className="text-3xl font-bold   ">My Funding projects</div>
+          <button
+            className="bg-light-green px-4 py-1 text-black-background ml-custom rounded-md h-fit items-end justify-end font-bold text-xl hover:scale-110 transition ease-in duration-150"
+            // className="bg-light-green px-4 py-1 text-black-background rounded-md h-fit font-bold text-xl "
+            // onClick={() => setShowModal(true)}
+            onClick={CreateNewProgram}
+          >
+            Create new program
+          </button>
+        </div>
+
+        <CauseBox
+          buttonText="Donate"
+          image={program1}
+          message=" Help us fight feed thousands of people in poverty, homeless
+                  people and provide medical care for the poor"
+          progressAmount="500/1000" // dynamic
+          progressValue={50}
+          title="Health care program"
+          boxDesign="w-60 shadow-green pb-4 w-custom4  ml-14 "
+          textColor={`darkGreen`}
+          addDescription={true}
+          // onClicked={} // move to detail page
+        />
+
+        {/* <div className="mt-10 border rounded-lg text-darkGreen shadow-green w-72">
             <Image
               src={program1}
               width="300px"
@@ -51,7 +65,7 @@ const MyfundingProjects = () => {
               value="50"
             />
           </div>
-        </div>
+        </div>   */}
       </Layout>
     </div>
   );

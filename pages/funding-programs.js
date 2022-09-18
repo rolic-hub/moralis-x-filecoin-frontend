@@ -129,7 +129,7 @@ const FundingProgram = () => {
             </div>
           </div>
         </div>
-        <hr className="w-full mt-5 bg-black h-0.5" />
+
         <div>
           {verify && (
             <div>
@@ -146,8 +146,9 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-orange p-1 ml-1  px-6 py-2 ml-2  text-white-background font-bold text-xs rounded-md mb-3`}
                 progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={progressButton}
-                boxDesign="w-60 shadow-orange"
+                boxDesign="w-60 shadow-orange w-custom4  ml-20 "
                 textColor={`darkGreen`}
+                addDescription={true}
               />
             </div>
           )}
@@ -193,8 +194,9 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-red p-1 ml-1  px-6 py-2 ml-2  text-white-background font-bold text-xs rounded-md mb-3`}
                 progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={progressButton}
-                boxDesign="w-60 shadow-red"
+                boxDesign="w-60 shadow-red w-custom4  ml-20 "
                 textColor={`darkGreen`}
+                addDescription={true}
               />
             </div>
           )}
@@ -239,30 +241,30 @@ const FundingProgram = () => {
                 buttonDesign={`mt-5 bg-light-green   ml-1  px-5 ml-2  text-DarkBlack font-bold text-xs rounded-md mb-3`}
                 progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={progressButton}
-                boxDesign="w-60 shadow-green"
+                boxDesign="w-60 shadow-green w-custom4 ml-20  "
                 textColor={`darkGreen`}
+                addDescription={true}
               />
             </div>
           )}
           {completed && (
-            <div>
-              <CauseBox
-                addbutton={true}
-                addProgress={true}
-                buttonText="completed"
-                image={program1}
-                message=" Help us fight feed thousands of people in poverty, homeless
+            <CauseBox
+              addbutton={true}
+              addProgress={true}
+              buttonText="completed"
+              image={program1}
+              message=" Help us fight feed thousands of people in poverty, homeless
                   people and provide medical care for the poor"
-                progressAmount="1000/1000"
-                progressValue={100}
-                title="Health care program"
-                buttonDesign={`mt-5 bg-blue font-semibold  ml-2 px-4 py-0 text-white-background text-xs rounded-md mb-3`}
-                progressDesign={`ml-16 h-4 bg-blue rounded-lg bg-transparent mb-3 w-28`}
-                onClicked={completedButton}
-                boxDesign="w-60 shadow-blue"
-                textColor={`darkGreen`}
-              />
-            </div>
+              progressAmount="1000/1000"
+              progressValue={100}
+              title="Health care program"
+              buttonDesign={`mt-5 bg-blue font-semibold  ml-2 px-4 py-0 text-white-background text-xs rounded-md mb-3`}
+              progressDesign={`ml-16 h-4 bg-blue rounded-lg bg-transparent mb-3 w-28`}
+              onClicked={completedButton}
+              boxDesign="w-60 shadow-blue w-custom4  ml-20 "
+              textColor={`darkGreen`}
+              addDescription={true}
+            />
           )}
         </div>
       </Layout>

@@ -7,7 +7,7 @@ import Layout from '../../components/Layout';
 import Person from '../../assest/person.png';
 import styles from '../../styles/Home.module.css';
 import Footer from '../../components/footer';
-
+import CauseBox from '../../components/causeBox';
 const ProfilePage = () => {
   return (
     <div>
@@ -76,14 +76,22 @@ const ProfilePage = () => {
                 </div>
               </div>
             </div>
-            <div className="p-5  ">
-              <p className="text-2xl font-bold mb-3 mt-7 ">Programs Donated</p>
-              <div className="rounded-lg border w-fit shadow-green  ">
-                <Image src={program1} alt="program-holder" />
-                <p className="text-center pt-2 pb-3 font-bold">
-                  Health care program
-                </p>
-              </div>
+
+            <div>
+              <CauseBox
+                buttonText="Donate"
+                image={program1}
+                message=" Help us fight feed thousands of people in poverty, homeless
+                  people and provide medical care for the poor"
+                progressAmount="500/1000" // dynamic
+                progressValue={50}
+                title="Health care program"
+                buttonDesign={`mt-5 bg-light-green mr-5 mt-6 ml-1  px-5 text-DarkBlack font-bold text-xs rounded-md mb-3`}
+                boxDesign="w-56 shadow-green pb-4 ml-3"
+                textColor={`darkGreen`}
+                addDescription={false}
+                // onClicked={} // move to detail page
+              />
             </div>
           </div>
         </div>

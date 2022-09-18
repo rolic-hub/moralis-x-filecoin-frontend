@@ -51,6 +51,12 @@ const FundingProgram = () => {
   const completedButton = () => {
     router.push(`/completed/8`);
   };
+
+  const CreateNewProgram = () => {
+    router.push('/Create-new-program');
+    console.log('button pressed');
+  };
+
   return (
     <div className={styles.home}>
       <Layout>
@@ -59,7 +65,10 @@ const FundingProgram = () => {
             <p className="text-light-green font-bold ml-24 text-3xl   ">
               Funding programs
             </p>
-            <button className="bg-light-green px-4   text-black-background ml-custom rounded-md   font-bold text-xl hover:scale-110 transition ease-in duration-150">
+            <button
+              onClick={CreateNewProgram}
+              className="bg-light-green px-4   text-black-background ml-custom rounded-md   font-bold text-xl hover:scale-110 transition ease-in duration-150"
+            >
               Create new program
             </button>
           </div>
@@ -68,54 +77,54 @@ const FundingProgram = () => {
             <div>
               <p
                 onClick={verifyClick}
-                className={`text-xl font-bold hover:cursor-pointer   flex ${
+                className={`text-xl font-bold hover:cursor-pointer ml-1 hover:scale-110 transition ease-in duration-150  flex ${
                   verify ? 'text-orange' : ''
                 }`}
               >
-                Verifying <GiSandsOfTime className="mt-2" />
+                Verifying <GiSandsOfTime className="mt-2 ml-1" />
               </p>
               {verify && (
-                <hr className="w-full  h-1  bg-orange text-orange  rounded-lg " />
+                <hr className="w-full  h-1 mt-1  bg-orange text-orange  transition ease-in duration-150 rounded-lg " />
               )}
             </div>
 
             <div>
               <p
                 onClick={progressClick}
-                className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
-                  progress ? 'text-light-green' : ''
+                className={`text-xl font-bold hover:cursor-pointer ml-16 hover:scale-110 transition ease-in duration-150 flex ${
+                  progress ? 'text-darkGreen' : ''
                 }`}
               >
                 In progress <BiDollarCircle className="mt-1 ml-1" />
               </p>
               {progress && (
-                <hr className="w-28 h-1 ml-16 bg-light-green rounded-lg  " />
+                <hr className="w-32 h-1 ml-16 mt-1  bg-darkGreen  text-darkGreen rounded-lg   transition ease-in duration-150 " />
               )}
             </div>
             <div>
               <p
                 onClick={rejectedClicked}
-                className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
+                className={`text-xl font-bold hover:cursor-pointer ml-16 hover:scale-110 transition ease-in duration-150 flex ${
                   reject ? 'text-red' : ''
                 }`}
               >
                 Rejected <AiOutlineCloseCircle className="mt-1 ml-1" />
               </p>
               {reject && (
-                <hr className="w-24 h-1 ml-16 bg-red text-red rounded-lg " />
+                <hr className="w-24 h-1 ml-16 mt-1 bg-red text-red  transition ease-in duration-150 rounded-lg " />
               )}
             </div>
             <div>
               <p
                 onClick={completedClick}
-                className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
+                className={`text-xl font-bold hover:cursor-pointer ml-16 hover:scale-110 transition ease-in duration-150 flex ${
                   completed ? 'text-blue ' : ''
                 }`}
               >
                 Completed <BsCheckCircle className="mt-1 ml-1" />
               </p>
               {completed && (
-                <hr className="w-28 h-1 ml-16 bg-blue text-blue rounded-lg " />
+                <hr className="w-28 h-1 ml-16 mt-1  bg-blue text-blue transition ease-in duration-150 rounded-lg " />
               )}
             </div>
           </div>
@@ -124,7 +133,27 @@ const FundingProgram = () => {
         <div>
           {verify && (
             <div>
-              <div className="mt-10 ml-20  rounded-lg   shadow-orange space-x-2 w-72">
+              <CauseBox
+                addbutton={true}
+                addProgress={false}
+                buttonText="Verify"
+                image={program1}
+                message=" Help us fight feed thousands of people in poverty, homeless
+                  people and provide medical care for the poor"
+                progressAmount="500/1000" // dynamic
+                progressValue={50}
+                title="Health care program"
+                buttonDesign={`mt-5 bg-orange p-1 ml-1  px-6 py-2 ml-2  text-white-background font-bold text-xs rounded-md mb-3`}
+                progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
+                onClicked={progressButton}
+                boxDesign="w-60 shadow-orange"
+                textColor={`darkGreen`}
+              />
+            </div>
+          )}
+          {/* {verify && (
+            <div>
+              <div className="mt-10 ml-20  rounded-lg  hover:scale-105 transition ease-in duration-150  shadow-orange space-x-2 w-72">
                 <Image
                   src={program1}
                   width="300px"
@@ -147,11 +176,31 @@ const FundingProgram = () => {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
 
           {reject && (
             <div>
-              <div className="mt-10 ml-20  rounded-lg   shadow-red w-72">
+              <CauseBox
+                addbutton={true}
+                addProgress={false}
+                buttonText="Failed"
+                image={program1}
+                message=" Help us fight feed thousands of people in poverty, homeless
+                  people and provide medical care for the poor"
+                progressAmount="500/1000" // dynamic
+                progressValue={50}
+                title="Health care program"
+                buttonDesign={`mt-5 bg-red p-1 ml-1  px-6 py-2 ml-2  text-white-background font-bold text-xs rounded-md mb-3`}
+                progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
+                onClicked={progressButton}
+                boxDesign="w-60 shadow-red"
+                textColor={`darkGreen`}
+              />
+            </div>
+          )}
+          {/* {reject && (
+            <div>
+              <div className="mt-10 ml-20  rounded-lg  hover:scale-105 shadow-red w-72">
                 <Image
                   src={program1}
                   width="300px"
@@ -174,23 +223,24 @@ const FundingProgram = () => {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
           {progress && (
             <div>
               <CauseBox
                 addbutton={true}
                 addProgress={true}
-                buttonText="In progress"
+                buttonText="Donate"
                 image={program1}
                 message=" Help us fight feed thousands of people in poverty, homeless
                   people and provide medical care for the poor"
-                progressAmount="500/1000"
+                progressAmount="500/1000" // dynamic
                 progressValue={50}
                 title="Health care program"
-                buttonDesign={`mt-5 bg-light-green p-1 ml-1 font-semibold text-white text-xs rounded-md mb-3`}
-                progressDesign={`ml-10 h-3 rounded-lg bg-transparent mb-3 w-28`}
+                buttonDesign={`mt-5 bg-light-green   ml-1  px-5 ml-2  text-DarkBlack font-bold text-xs rounded-md mb-3`}
+                progressDesign={`ml-20 h-4 rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={progressButton}
-                boxDesign="w-60 dark:shadow-light-green"
+                boxDesign="w-60 shadow-green"
+                textColor={`darkGreen`}
               />
             </div>
           )}
@@ -206,10 +256,11 @@ const FundingProgram = () => {
                 progressAmount="1000/1000"
                 progressValue={100}
                 title="Health care program"
-                buttonDesign={`mt-5 bg-blue-600 font-semibold p-1 ml-1 text-white text-xs rounded-md mb-3`}
-                progressDesign={`ml-10 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
+                buttonDesign={`mt-5 bg-blue font-semibold  ml-2 px-4 py-0 text-white-background text-xs rounded-md mb-3`}
+                progressDesign={`ml-16 h-4 bg-blue rounded-lg bg-transparent mb-3 w-28`}
                 onClicked={completedButton}
-                boxDesign="w-60 dark:shadow-blue-600"
+                boxDesign="w-60 shadow-blue"
+                textColor={`darkGreen`}
               />
             </div>
           )}

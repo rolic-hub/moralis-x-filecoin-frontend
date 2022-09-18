@@ -10,7 +10,8 @@ const MyfundingProjects = () => {
   const router = useRouter();
 
   const CreateNewProgram = () => {
-    // router.push('/Create-new-program');
+    router.push('/Create-new-program');
+    console.log('button pressed');
   };
 
   return (
@@ -23,7 +24,7 @@ const MyfundingProjects = () => {
               className="bg-light-green px-4 py-1 text-black-background ml-custom rounded-md h-fit items-end justify-end font-bold text-xl hover:scale-110 transition ease-in duration-150"
               // className="bg-light-green px-4 py-1 text-black-background rounded-md h-fit font-bold text-xl "
               // onClick={() => setShowModal(true)}
-              onClick={CreateNewProgram()}
+              onClick={CreateNewProgram}
             >
               Create new program
             </button>

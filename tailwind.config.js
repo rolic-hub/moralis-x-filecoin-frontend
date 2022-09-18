@@ -61,7 +61,7 @@ module.exports = {
         custom1: '40rem',
         custom2: '50rem',
         custom3: '80rem',
-        custom4: '40rem',
+        custom4: '18rem',
         custom5: '40rem',
         custom6: '40rem'
       },

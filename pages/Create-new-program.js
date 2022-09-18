@@ -12,6 +12,7 @@ function CreateNewProgram() {
   const router = useRouter();
   const _fundingPage = () => {
     router.push('/funding-programs'); // Make this Dynamic
+    console.log('back button pressed ');
   };
 
   const body = {

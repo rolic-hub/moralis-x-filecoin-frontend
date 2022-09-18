@@ -133,7 +133,7 @@ const Verifypage = () => {
       </div>
 
       {/* Right side */}
-      <div className="flex flex-col w-6/12 text-light-green rounded-xl mt-8 ml-40  ">
+      <div className="flex flex-col w-6/12 text-light-green rounded-xl justify-end items-end mt-8 mr-40 mt-12  ">
         <CauseBox
           image={program1L}
           message=" Help us fight feed thousands of people in poverty, homeless
@@ -149,7 +149,7 @@ const Verifypage = () => {
           addDescription={true}
         />
 
-        <div className="ml-16 mt-6  ">
+        <div className="mr-16 mt-6  ">
           <button className="px-10 py-2 mb-6 ml-24 rounded-md   font-bold  bg-lightOrange text-DarkBlack hover:scale-110  transition ease-in duration-150  ">
             Vote
           </button>

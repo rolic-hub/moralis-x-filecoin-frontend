@@ -101,7 +101,7 @@ function CreateNewProgram() {
       <Navbar />
       <button
         onClick={_fundingPage}
-        className="px-8 py-2 rounded-lg ml-24 mt-10 font-bold text-DarkBlack  bg-Text-green  DarkBlack "
+        className="px-8 py-2 rounded-lg ml-24 mt-10 font-bold text-DarkBlack  bg-Text-green  DarkBlack hover:scale-110  transition ease-in duration-150  "
       >
         Back
       </button>
@@ -166,8 +166,9 @@ function CreateNewProgram() {
             <div className="flex ">
               <input
                 className="ml-form4 h-9 w-96 shadow-md rounded-lg bg-form text-center border-2 "
-                id="title"
-                type="text"
+                id="Backgroud"
+                accept="image/*"
+                type="file"
               />
             </div>
           </div>
@@ -182,8 +183,8 @@ function CreateNewProgram() {
               <input
                 className="ml-form5 h-9 w-96 shadow-md rounded-lg bg-form text-center border-2"
                 id="title"
-                // type="image"
-                type="text"
+                accept="video/*"
+                type="file"
               />
             </div>
           </div>
@@ -245,7 +246,7 @@ function CreateNewProgram() {
               <input
                 className="ml-form9 h-10 w-40 shadow-md rounded-lg bg-form text-start border-2"
                 id="title"
-                type="text"
+                type="number"
                 required
               />
               <span className="mt-2 -ml-12">ETH</span>
@@ -254,7 +255,7 @@ function CreateNewProgram() {
 
           <button className={styles.gradientButton2}>
             <span className="px-5   py-8 font-bold text-black-background  ">
-              Submit
+              <input type="submit" />
             </span>
           </button>
         </form>

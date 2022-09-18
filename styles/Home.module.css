@@ -111,7 +111,7 @@
   background-image: linear-gradient(#13DA92 , #13da9130);
  padding: 0.5rem 1rem 0.5rem 1rem;
  margin-top: 4rem;
- 
+ transition: 0.2s all ease-in;
 }
 
 .gradientButton2 {
@@ -119,9 +119,13 @@
  padding: 0.5rem 1rem 0.5rem 1rem;
  margin-left: 67rem;
 
- 
+ transition: 0.2s all ease-in;
 }
 
+.gradientButton2:hover {
+  transform: scale(1.2);
+ 
+}
 .card:hover,
 .card:focus,
 .card:active {
@@ -174,6 +178,7 @@
 }
 
 
+ 
 /* @media (max-width: 600px) {
   .grid {
     width: 100%;

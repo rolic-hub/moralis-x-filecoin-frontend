@@ -22,6 +22,31 @@ a {
   box-sizing: border-box;
 }
 
+input::file-selector-button {
+  font-weight: bold;
+  color: #221F1F;
+  padding: 0.1rem 0.3rem 0.1rem 0.6rem;
+  background-color:#12ECA0 ;
+ margin-right: 3rem;
+ margin-bottom: 1rem;
+ border-radius: 0.3rem;
+ transform: scale(1.21);
+ transition: 0.3s all ease-in;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #221F1F;
+  
+  color: #12ECA0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

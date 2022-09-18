@@ -64,18 +64,18 @@ const FundingProgram = () => {
             </button>
           </div>
 
-          <div className="flex 4 ml-24 mt-10 mr-80">
+          <div className="flex 4 ml-24 mt-10 mr-80 ">
             <div>
               <p
                 onClick={verifyClick}
-                className={`text-xl font-bold hover:cursor-pointer flex ${
-                  verify ? 'text-orange-500' : ''
+                className={`text-xl font-bold hover:cursor-pointer   flex ${
+                  verify ? 'text-orange' : ''
                 }`}
               >
-                Verifying <GiSandsOfTime className="mt-1" />
+                Verifying <GiSandsOfTime className="mt-2" />
               </p>
               {verify && (
-                <hr className="w-full  h-1  bg-light-green rounded-lg " />
+                <hr className="w-full  h-1  bg-orange text-orange  rounded-lg " />
               )}
             </div>
 
@@ -96,26 +96,26 @@ const FundingProgram = () => {
               <p
                 onClick={rejectedClicked}
                 className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
-                  reject ? 'text-red-600' : ''
+                  reject ? 'text-red' : ''
                 }`}
               >
                 Rejected <AiOutlineCloseCircle className="mt-1 ml-1" />
               </p>
               {reject && (
-                <hr className="w-24 h-1 ml-16 bg-light-green rounded-lg " />
+                <hr className="w-24 h-1 ml-16 bg-red text-red rounded-lg " />
               )}
             </div>
             <div>
               <p
                 onClick={completedClick}
                 className={`text-xl font-bold hover:cursor-pointer ml-16 flex ${
-                  completed ? 'text-blue-600' : ''
+                  completed ? 'text-blue ' : ''
                 }`}
               >
                 Completed <BsCheckCircle className="mt-1 ml-1" />
               </p>
               {completed && (
-                <hr className="w-28 h-1 ml-16 bg-light-green rounded-lg " />
+                <hr className="w-28 h-1 ml-16 bg-blue text-blue rounded-lg " />
               )}
             </div>
           </div>
@@ -124,23 +124,53 @@ const FundingProgram = () => {
         <div>
           {verify && (
             <div>
-              <div className="mt-10 ml-20 border rounded-lg shadow-md dark:shadow-orange-600 w-60">
+              <div className="mt-10 ml-20  rounded-lg   shadow-orange space-x-2 w-72">
                 <Image
                   src={program1}
                   width="300px"
                   height="150px"
                   alt="program-1"
+                  className=" rounded-lg  "
                 />
-                <p className="font-bold ml-2">Health care program</p>
-                <p className="text-xs mt-2 leading-normal text-left ml-2 font-bold text-gray-500">
+                <p className="font-bold ml-2 text-darkGreen">
+                  Health care program
+                </p>
+                <p className="text-xs mt-2  leading-relaxed text-left ml-2 font-bold text-Text-green">
                   Help us fight feed thousands of people in poverty, homeless
                   people and provide medical care for the poor
                 </p>
                 <button
                   onClick={verifyButton}
-                  className="mt-5 bg-orange-600 p-1 ml-24 text-sm font-semibold text-white rounded-md mb-3 "
+                  className="mt-5 bg-orange px-6 py-2 ml-5 text-sm font-semibold text-white-background rounded-md mb-3 "
                 >
                   verify
+                </button>
+              </div>
+            </div>
+          )}
+
+          {reject && (
+            <div>
+              <div className="mt-10 ml-20  rounded-lg   shadow-red w-72">
+                <Image
+                  src={program1}
+                  width="300px"
+                  height="150px"
+                  alt="program-1"
+                  className=" rounded-lg  "
+                />
+                <p className="font-bold ml-2  text-darkGreen">
+                  Health care program
+                </p>
+                <p className="text-xs mt-2   text-left ml-2 font-bold text-Text-green">
+                  Help us fight feed thousands of people in poverty, homeless
+                  people and provide medical care for the poor
+                </p>
+                <button
+                  onClick={verifyButton}
+                  className="mt-5 bg-red  px-4 py-2 ml-5 text-sm font-semibold text-white-background rounded-md mb-3 "
+                >
+                  Rejected
                 </button>
               </div>
             </div>

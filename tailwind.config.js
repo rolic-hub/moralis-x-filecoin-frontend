@@ -40,19 +40,27 @@ module.exports = {
       'white-background': '#ffffff',
       gray: '#575151',
       form: '#221F1F',
-      DarkBlack: '#000000'
+      DarkBlack: '#000000',
+      orange: '#ea580c',
+      darkGreen: '#39BF97',
+      progressBar: '#D9D9D9',
+      red: '#CB0E3B',
+      blue: '#2399B4'
     },
     extend: {
       lineHeight: {
         'extra-loose': '3rem'
       },
-      CustomShadow: {
-        '3xl': '0 35px 60px -15px rgba(256, 256, 256, 1)'
+      boxShadow: {
+        green: '0px 0.28rem 0.28rem 0px rgba(18, 236, 160, 1)',
+        orange: '0px 0.28rem 0.28rem  0px rgba(255, 127, 39, 1)',
+        red: '0px 0.28rem 0.28rem  0px rgba(194, 5, 51, 1)',
+        blue: '0px 0.28rem 0.28rem  0px rgba(14, 182, 235 , 1)'
       },
       width: {
         custom1: '40rem',
         custom2: '50rem',
-        custom3: '30rem',
+        custom3: '80rem',
         custom4: '40rem',
         custom5: '40rem',
         custom6: '40rem'

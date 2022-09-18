@@ -12,11 +12,11 @@ const ProfilePage = () => {
   return (
     <div>
       <Layout>
-        <div className="flex ml-24 h-fullPage text-light-green ">
+        <div className="flex  w-custom3 container    ml-24 h-fullPage text-light-green ">
           <div>
-            <div className="inline-flex">
-              <p className="text-4xl mr-56 ml-5 font-bold   mt-7">My Profile</p>
-              <div className="flex ml-96">
+            <div className="    w-custom3 flex  ">
+              <p className="text-4xl   font-bold    mt-7">My Profile</p>
+              <div className="flex  ml-96 ">
                 {/* <Image
                   src={moneyBag}
                   height="30px"
@@ -46,7 +46,7 @@ const ProfilePage = () => {
                     alt="address"
                   />
                 </div>
-                <p className="mt-2 ml-1 text-green-600 text-2xl font-semibold ">
+                <p className="mt-2 ml-1 text-light-green  text-2xl font-semibold ">
                   0xea123456789101112{' '}
                 </p>
                 {/* For user only chat button*/}
@@ -58,7 +58,7 @@ const ProfilePage = () => {
                 NFT&apos;s Recieved
               </p>
               <div className="flex">
-                <div className="w-fit shadow-CustomShadow dark:shadow-green-600">
+                <div className="w-fit shadow-green dark:text-light-green ">
                   <Image
                     src={cryptodonate}
                     height="150px"
@@ -66,7 +66,7 @@ const ProfilePage = () => {
                     className={styles.boxShadow}
                   />
                 </div>
-                <div className="w-fit shadow-CustomShadow ml-3 dark:shadow-green-600">
+                <div className="w-fit shadow-green ml-12 dark:text-light-green ">
                   <Image
                     src={cryptodonate}
                     height="150px"
@@ -76,15 +76,13 @@ const ProfilePage = () => {
                 </div>
               </div>
             </div>
-            <div className="pl-5 ">
+            <div className="p-5  ">
               <p className="text-2xl font-bold mb-3 mt-7 ">Programs Donated</p>
-              <div className="rounded-lg border w-fit ">
-                <Image
-                  src={program1}
-                  alt="program-holder"
-                  className={styles.boxShadow}
-                />
-                <p className="text-center">Health care program</p>
+              <div className="rounded-lg border w-fit shadow-green  ">
+                <Image src={program1} alt="program-holder" />
+                <p className="text-center pt-2 pb-3 font-bold">
+                  Health care program
+                </p>
               </div>
             </div>
           </div>

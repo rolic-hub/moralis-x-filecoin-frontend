@@ -14,6 +14,18 @@ function CreateNewProgram() {
     router.push('/funding-programs'); // Make this Dynamic
   };
 
+  const body = {
+    Name: 'Progam Name',
+    cause: ' Program cause',
+    Description: ' program descrition absadsssssssssssssssssssss',
+    image: ' image ',
+    video: ' video',
+    twitter: ' twiiter ',
+    facebook: ' facebook',
+    website: ' website',
+    fundGoal: 0.002
+  };
+
   //   async function handleSubmit(e) {
   //     e.preventDefault();
 

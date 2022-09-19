@@ -110,16 +110,15 @@ const detailPage = () => {
             <BsFillChatDotsFill size={25} className="mr-4" />
             <p className="text-md font-semibold">
               Chat with the Organizer
-                <button
-                  onClick={() =>
-                    launch('0x31600D5AF12782205F42998b19567B550c1D464e')
-                  }
-                  className="px-6 py-1 ml-4 rounded-lg max-w-button   font-bold  bg-Text-green  text-DarkBlack hover:scale-110  transition ease-in duration-150  "
-                >
-                  chat
-                </button>
-                <Window />
-            
+              <button
+                onClick={
+                  () => launch('0x31600D5AF12782205F42998b19567B550c1D464e') //address of the organizer
+                }
+                className="px-6 py-1 ml-4 rounded-lg max-w-button   font-bold  bg-Text-green  text-DarkBlack hover:scale-110  transition ease-in duration-150  "
+              >
+                chat
+              </button>
+              <Window />
             </p>
           </div>
 

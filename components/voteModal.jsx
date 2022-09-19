@@ -57,6 +57,7 @@ export default function VoteModal({showModal, setShowModal}) {
                     addProgress={false}
                     addbutton={false}
                     image={program1}
+                    addDescription={true}
                     boxDesign="w-60 mt-2 border-2"
                     title="Health care program"
                     message="Help us fight feed thousands of people in poverty, homeless poeple and provide medical care for the poor"

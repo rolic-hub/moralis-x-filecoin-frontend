@@ -42,7 +42,7 @@ export default function DonateModal({showModal, setShowModal}) {
                             <label htmlFor="amount">Amount:</label> 
                             <input type="number" className=" text-center ml-5 border rounded-lg shadow-md" id="amount" />
                         </div>
-                        <button className="bg-Text-green mt-6 ml-16 rounded-lg p-1 pl-1 pr-1 w-fit text-black-background font-semibold">Donate</button>
+                        <button className="bg-Text-green mt-16 ml-20 rounded-lg p-1 pl-1 pr-1 w-fit text-black-background font-semibold">Donate</button>
                        
                     </div>
                     <div className="ml-10">
@@ -50,6 +50,7 @@ export default function DonateModal({showModal, setShowModal}) {
                         addProgress={true}
                         addbutton={false}
                         image={program1}
+                        addDescription={true}
                         message="Help us fight feed thousands of people in poverty, homeless
                         people and provide medical care for the poor"
                         progressAmount="500/1000"

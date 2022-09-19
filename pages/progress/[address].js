@@ -9,7 +9,6 @@ import p3 from '../../assest/Ellipse10.png';
 import p4 from '../../assest/Ellipse13.png';
 import p5 from '../../assest/Ellipse14.png';
 import DonateModal from "../../components/donateModal"
-
 import { BiNotepad } from 'react-icons/bi';
 import VoteModal from '../../components/voteModal';
 import ReactPlayer from 'react-player';

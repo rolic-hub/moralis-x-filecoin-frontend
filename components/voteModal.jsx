@@ -40,7 +40,7 @@ export default function VoteModal({showModal, setShowModal}) {
                  </div>
                  
              
-                 <div className="flex p-1 ml-5 mt-5">
+                 <div className="flex p-1 ml-5 mt-16">
                   <button className="flex bg-Text-green rounded-lg p-1 mr-4">
                     <FaThumbsUp className="ml-1 text-white-background mr-1 " size={20}/>
                     <p className="text-DarkBlack font-semibold">Accept</p>

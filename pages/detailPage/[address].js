@@ -1,29 +1,30 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-
+import { useAccount } from 'wagmi';
 import program1L from '../../assest/program1L.png';
-
 import ReactPlayer from 'react-player';
 import {
   AiFillCheckCircle,
   AiOutlineTwitter,
   AiFillCloseSquare
 } from 'react-icons/ai';
-
 import {
   BsFillPersonFill,
   BsFillChatDotsFill,
   BsFacebook
 } from 'react-icons/bs';
-
 import { RiMoneyDollarCircleFill } from 'react-icons/ri';
 import { FiTarget } from 'react-icons/fi';
 import { GiOnTarget, GiPositionMarker } from 'react-icons/gi';
 import { CgWebsite } from 'react-icons/cg';
 import { useRouter } from 'next/router';
+import { Window, useLaunch, useIsOpen, Launcher } from '@relaycc/receiver';
 import styles from '../../styles/Home.module.css';
 const detailPage = () => {
+  const launch = useLaunch();
+  const isOpen = useIsOpen();
   const router = useRouter();
+  const { address } = useAccount();
   const _fundingPage = () => {
     router.push('/funding-programs'); // Make this Dynamic
     console.log('back button pressed ');
@@ -109,15 +110,16 @@ const detailPage = () => {
             <BsFillChatDotsFill size={25} className="mr-4" />
             <p className="text-md font-semibold">
               Chat with the Organizer
-              <a
-                href={`https://mumbai.polygonscan.com/`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="px-6 py-1 ml-4 rounded-lg max-w-button   font-bold  bg-Text-green  text-DarkBlack hover:scale-110  transition ease-in duration-150  ">
+                <button
+                  onClick={() =>
+                    launch('0x31600D5AF12782205F42998b19567B550c1D464e')
+                  }
+                  className="px-6 py-1 ml-4 rounded-lg max-w-button   font-bold  bg-Text-green  text-DarkBlack hover:scale-110  transition ease-in duration-150  "
+                >
                   chat
                 </button>
-              </a>
+                <Window />
+            
             </p>
           </div>
 

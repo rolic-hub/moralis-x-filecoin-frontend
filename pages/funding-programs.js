@@ -140,6 +140,7 @@ const FundingProgram = () => {
               <CauseBox
                 addbutton={true}
                 addProgress={false}
+                progresspara="ml-32"
                 buttonText="Verify"
                 image={program1}
                 message=" Help us fight feed thousands of people in poverty, homeless
@@ -248,6 +249,7 @@ const FundingProgram = () => {
                 boxDesign="w-60 shadow-green w-custom4 ml-20  "
                 textColor={`darkGreen`}
                 addDescription={true}
+                progresspara="ml-28"
               />
             </div>
           )}
@@ -257,7 +259,7 @@ const FundingProgram = () => {
               addProgress={true}
               buttonText="completed"
               image={program1}
-              message=" Help us fight feed thousands of people in poverty, homeless
+              message="Help us fight feed thousands of people in poverty, homeless
                   people and provide medical care for the poor"
               progressAmount="1000/1000"
               progressValue={100}
@@ -268,6 +270,7 @@ const FundingProgram = () => {
               boxDesign="w-60 shadow-lightBlue w-custom4  ml-20 "
               textColor={`darkGreen`}
               addDescription={true}
+              progresspara="ml-24"
             />
           )}
         </div>

@@ -14,7 +14,7 @@ const CauseBox = ({
   buttonText,
   onClicked,
   boxDesign,
-
+  progresspara,
   textColor,
   addDescription
 }) => {
@@ -25,7 +25,7 @@ const CauseBox = ({
 
   return (
     <div
-      className={`mt-10 rounded-lg   transition ease-in duration-150 hover:scale-105   ${boxDesign} `}
+      className={`mt-10 rounded-lg transition ease-in duration-150 hover:scale-105   ${boxDesign} `}
     >
       <Image
         src={image}
@@ -40,7 +40,7 @@ const CauseBox = ({
       </p>
       {addDescription && (
         <p
-          className={`text-xs mt-2 leading-normal text-left ml-2 font-bold `}
+          className={`text-xs mt-2 leading-normal text-Text-green text-left ml-2 font-bold `}
           onClick={detailPage}
         >
           {message}
@@ -55,7 +55,7 @@ const CauseBox = ({
         )}
         {addProgress && (
           <div>
-            <p className="text-xs ml-20 font-semibold mt-5">
+            <p className={`text-xs font-semibold mt-5 ${progresspara}`}>
               {progressAmount} $
             </p>
             <progress

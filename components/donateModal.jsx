@@ -11,12 +11,13 @@ export default function DonateModal({showModal, setShowModal}) {
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
-            <div className="relative w-auto my-6 mx-auto max-w-sm">
+            <div className="w-auto my-6 border-4 bg-black-background relative mx-auto max-w-sm">
              
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-fit bg-white outline-none focus:outline-none">
            
                 <div className="flex items-start justify-between rounded-t">
-                  <h3 className="text-2xl text-green-500 ml-32 mt-2 font-semibold">
+               
+                  <h3 className="text-2xl text-green-500 ml-56 mt-2 font-semibold">
                     Payment
                   </h3>
                   <button
@@ -32,7 +33,7 @@ export default function DonateModal({showModal, setShowModal}) {
                 <div className="relative p-6 flex-auto">
                   <div className="flex">
                     <div>
-                        <p className="text-sm mt-5">Select address , amount and click donate button to donate. Once the money is send it can’t be undone</p>
+                        <p className="text-sm mt-5 w-56">Select address , amount and click donate button to donate. Once the money is send it can’t be undone</p>
                         <div className="mt-5">
                             <label htmlFor="address">Address:</label> 
                             <input type="text" className=" text-md border ml-5 rounded-lg shadow-md " id="address"/>
@@ -41,10 +42,10 @@ export default function DonateModal({showModal, setShowModal}) {
                             <label htmlFor="amount">Amount:</label> 
                             <input type="number" className=" text-center ml-5 border rounded-lg shadow-md" id="amount" />
                         </div>
-                        <button className="bg-green-600 mt-6 ml-16 rounded-lg p-1 pl-1 pr-1 w-fit text-white font-semibold">Donate</button>
+                        <button className="bg-Text-green mt-6 ml-16 rounded-lg p-1 pl-1 pr-1 w-fit text-black-background font-semibold">Donate</button>
                        
                     </div>
-                    <div>
+                    <div className="ml-10">
                         <CauseBox
                         addProgress={true}
                         addbutton={false}
@@ -53,9 +54,10 @@ export default function DonateModal({showModal, setShowModal}) {
                         people and provide medical care for the poor"
                         progressAmount="500/1000"
                         progressValue={50}
-                        progressDesign={`ml-10 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
+                        progresspara="ml-32"
+                        progressDesign={`ml-24 h-3 bg-blue-600 rounded-lg bg-transparent mb-3 w-28`}
                         title="Health care program"
-                        boxDesign="w-60 mt-2"
+                        boxDesign="w-60 mt-2 border-2 border-Textgreen"
                         />
                     </div>
                   </div>

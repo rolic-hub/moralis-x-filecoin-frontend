@@ -8,6 +8,7 @@ import p2 from '../../assest/Ellipse9.png';
 import p3 from '../../assest/Ellipse10.png';
 import p4 from '../../assest/Ellipse13.png';
 import p5 from '../../assest/Ellipse14.png';
+import DonateModal from "../../components/donateModal"
 
 import { BiNotepad } from 'react-icons/bi';
 import VoteModal from '../../components/voteModal';
@@ -41,6 +42,7 @@ import { MdCheckCircle } from 'react-icons/md';
 
 const ProgressPage = () => {
   const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
   const _fundingPage = () => {
     router.push('/funding-programs'); // Make this Dynamic
     console.log('back button pressed ');
@@ -152,9 +154,10 @@ const ProgressPage = () => {
         />
 
         <div className="mr-16 mt-6  ">
-          <button className="px-10 py-2 mb-6 ml-24 rounded-md   font-bold  bg-light-green  text-DarkBlack hover:scale-110  transition ease-in duration-150  ">
+          <button onClick={() => setShowModal(true)} className="px-10 py-2 mb-6 ml-24 rounded-md   font-bold  bg-light-green  text-DarkBlack hover:scale-110  transition ease-in duration-150  ">
             Donate
           </button>
+          <DonateModal showModal={showModal} setShowModal={setShowModal} />
 
           <div className="flex mt-5">
             <FiTarget size={35} className="mr-4" />
@@ -188,6 +191,7 @@ const ProgressPage = () => {
           <div className="h-44"></div>
         </div>
       </div>
+     
     </div>
   );
 };

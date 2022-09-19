@@ -40,6 +40,7 @@ import { MdCheckCircle } from 'react-icons/md';
 
 const Verifypage = () => {
   const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
   const _fundingPage = () => {
     router.push('/funding-programs'); // Make this Dynamic
     console.log('back button pressed ');
@@ -150,9 +151,13 @@ const Verifypage = () => {
         />
 
         <div className="mr-16 mt-6  ">
-          <button className="px-10 py-2 mb-6 ml-24 rounded-md   font-bold  bg-lightOrange text-DarkBlack hover:scale-110  transition ease-in duration-150  ">
+          <button
+            onClick={() => setShowModal(true)}
+            className="px-10 py-2 mb-6 ml-24 rounded-md   font-bold  bg-lightOrange text-DarkBlack hover:scale-110  transition ease-in duration-150  "
+          >
             Vote
           </button>
+          <VoteModal setShowModal={setShowModal} showModal={showModal} />
 
           <div className="flex mt-5">
             <HiOutlineClipboardList size={25} className="mr-4" />
@@ -198,7 +203,7 @@ export default Verifypage;
 
 // export default Verifypage;
 
-// const [showModal, setShowModal] = useState(false);
+//
 // return (
 //   <div className="p-5 flex justify-between">
 //     <div>
@@ -299,7 +304,7 @@ export default Verifypage;
 //       >
 //         vote
 //       </button>
-//       <VoteModal setShowModal={setShowModal} showModal={showModal} />
+//
 //       <div className="mt-10 ml-20">
 //         <p className="flex text-md font-semibold">
 //           <GiPositionMarker size={25} className="mr-2" />

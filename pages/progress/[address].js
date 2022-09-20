@@ -13,7 +13,7 @@ import {
   BsFillChatDotsFill,
   BsFacebook
 } from 'react-icons/bs';
-import { GiOnTarget, GiPositionMarker } from 'react-icons/gi';
+import { GiOnTarget, GiPositionMarker, GiPresent } from 'react-icons/gi';
 import { CgWebsite } from 'react-icons/cg';
 import NftModal from '../../components/nftModal';
 
@@ -134,6 +134,10 @@ const ProgressPage = () => {
             </p>
           </div>
           <div className="flex mt-1 mb-2">
+            <GiPresent size={25} className="mr-4" />
+            <p className="text-md font-semibold">Nft's recieved: 4 GW</p>
+          </div>
+          <div className="flex mt-1 mb-2">
             <IoTimeSharp size={25} className="mr-4" />
             <p className="text-md font-semibold">Time remaining: 2 Days</p>
           </div>
@@ -171,7 +175,7 @@ const ProgressPage = () => {
           <div className="flex mt-2">
             <BsFillChatDotsFill size={25} className="mr-2" />
             <p className="text-md font-semibold">Chat with the organizer</p>
-            <button className="bg-blue-600 p-1 rounded-md font-bold mb-24 ml-2">
+            <button className="bg-blue-600 p-1 rounded-md font-bold mb-24 ml-2 text-white">
               Chat
             </button>
           </div>

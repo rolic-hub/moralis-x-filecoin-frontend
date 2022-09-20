@@ -32,33 +32,34 @@ export default function NftModal({ showModal, setShowModal }) {
                       </p>
                       <div className="flex">
                         <div className="mt-2">
-                          <p className="text-sm font-semibold mb-1 ml-5">
+                          <p className="text-sm font-semibold text-black mb-1 ml-5">
                             Mint default Nft:
                           </p>
                           <div className="flex">
-                            <p className="flex text-sm ml-2 mr-2">Image  </p>
+                            <p className="flex text-sm ml-2 mr-2 font-semibold">
+                              Image{' '}
+                            </p>
                             <div>
-                              <Image
-                                height="100px"
-                                width="200px"
-                                src={program1}
-                                alt="program-1"
-                              />
+                              <Image height="200px" width="300px" src={program1} alt="program-1" />
                             </div>
                           </div>
                           <div className="flex">
-                            <p className="text-sm ml-2 mr-2 mt-2">Title   </p>
-                            <p className="text-sm border-2 p-1 rounded-lg ml-2 ">
+                            <p className="text-sm ml-2 mr-2 mt-1 font-semibold">
+                              Title{' '}
+                            </p>
+                            <p className="text-xs font-semibold border-2 border-black text-blue-600 p-1 rounded-lg ml-2 ">
                               A Goodwill nft
                             </p>
                           </div>
                         </div>
                         <div className="mt-2 ml-5">
-                          <p className="text-sm font-semibold mb-1 ml-5">
+                          <p className="text-sm font-semibold text-black mb-1 ml-5">
                             Mint custom Nft:
                           </p>
                           <div className="flex">
-                            <p className="flex text-sm ml-2 mr-2">Image  </p>
+                            <p className="flex text-sm ml-2 mr-2 mt-1 font-semibold">
+                              Image{' '}
+                            </p>
                             <div>
                               <input
                                 type="file"
@@ -67,10 +68,12 @@ export default function NftModal({ showModal, setShowModal }) {
                             </div>
                           </div>
                           <div className="flex mt-5">
-                            <p className="text-sm ml-2 mr-2 mt-2">Title   </p>
+                            <p className="text-sm ml-2 mr-2 mt-1 font-semibold">
+                              Title{' '}
+                            </p>
                             <input
                               type="text"
-                              className="w-36 rounded-lg border "
+                              className="w-36 rounded-lg text-center border "
                             />
                           </div>
                         </div>

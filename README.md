@@ -14,7 +14,8 @@ feature` anyone who donates to the cause gets a soul-bound nft made using `NFT.s
   * We plan to implement a standard open dao which with each cause as proposals and ways to incentivize users to verify them
   * we plan to add support for donation of real world asssets or other digital assets
   
-  ## 
+  ## integrations 
+  chainlink keepers for automating functions in smart contract [https://github.com/umershaikh123/Moralis-x-Filecoin-Hackathon/blob/master/Backend/Hardhat/contracts/funder.sol]
   
 
 

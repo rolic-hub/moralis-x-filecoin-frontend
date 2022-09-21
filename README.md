@@ -15,7 +15,10 @@ feature` anyone who donates to the cause gets a soul-bound nft made using `NFT.s
   * we plan to add support for donation of real world asssets or other digital assets
   
   ## integrations 
-  chainlink keepers for automating functions in smart contract [https://github.com/umershaikh123/Moralis-x-Filecoin-Hackathon/blob/master/Backend/Hardhat/contracts/funder.sol]
+  * chainlink keepers for automating functions in smart contract - https://github.com/umershaikh123/Moralis-x-Filecoin-Hackathon/blob/master/Backend/Hardhat/contracts/funder.sol
+  * xmtp for messaging - https://github.com/umershaikh123/moralis-x-filecoin-frontend/blob/heeze-branch/pages/detailPage/%5Baddress%5D.js
+  * web3.storage and NFT.storage to store the users data when a cause is created - https://github.com/umershaikh123/moralis-x-filecoin-frontend/blob/main/pages/Create-new-program.js
+  * Moralis for syncing events from our smart contract
   
 
 
